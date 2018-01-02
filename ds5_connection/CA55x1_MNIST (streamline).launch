@@ -5,58 +5,58 @@
 <stringAttribute key="ANDROID_APP_DIR" value=""/>
 <stringAttribute key="ANDROID_PROCESS_NAME" value=""/>
 <mapAttribute key="AverageDurationTracker">
-<mapEntry key="*Fetching Data Model" value="746131"/>
+<mapEntry key="*Fetching Data Model" value="810661"/>
 <mapEntry key="*FunctionLoader" value="106264492"/>
-<mapEntry key="*list global low level symbols" value="1423205"/>
+<mapEntry key="*list global low level symbols" value="788695"/>
 <mapEntry key="*loading memory from target" value="4174949"/>
 <mapEntry key="*loading values from target" value="3101648"/>
 <mapEntry key="*updating expressions" value="366335"/>
 <mapEntry key="*updating local_variables" value="902414"/>
 <mapEntry key="*updating registers" value="66275861"/>
-<mapEntry key="*updating variables" value="529403"/>
-<mapEntry key="AddEventObserver" value="4518940"/>
+<mapEntry key="*updating variables" value="497620"/>
+<mapEntry key="AddEventObserver" value="3609674"/>
 <mapEntry key="Evaluate" value="4048736"/>
 <mapEntry key="ListRegimeWarningsCommand" value="572535"/>
-<mapEntry key="Retrieving globals list" value="28908750"/>
+<mapEntry key="Retrieving globals list" value="13585998"/>
 <mapEntry key="areCachesAvailable" value="413656"/>
 <mapEntry key="backtrace" value="16511495"/>
-<mapEntry key="break" value="8673602"/>
-<mapEntry key="compute execution mode" value="294844"/>
-<mapEntry key="continue" value="14545048"/>
+<mapEntry key="break" value="6919732"/>
+<mapEntry key="compute execution mode" value="883535"/>
+<mapEntry key="continue" value="13296009"/>
 <mapEntry key="core" value="9396309"/>
 <mapEntry key="disassemble" value="27010121"/>
 <mapEntry key="evaluate address" value="3847148"/>
 <mapEntry key="get byte order" value="306047"/>
-<mapEntry key="get capabilities" value="317423"/>
+<mapEntry key="get capabilities" value="135527"/>
 <mapEntry key="get cwd" value="162047"/>
-<mapEntry key="get execution addresss" value="169359"/>
-<mapEntry key="get source lines" value="167269"/>
+<mapEntry key="get execution addresss" value="139094"/>
+<mapEntry key="get source lines" value="126567"/>
 <mapEntry key="getValidEncodings" value="481099"/>
-<mapEntry key="initialize command help" value="25699352"/>
+<mapEntry key="initialize command help" value="22895792"/>
 <mapEntry key="interrupt" value="438510"/>
-<mapEntry key="list breakpoint options" value="170759"/>
-<mapEntry key="list breakpoints" value="558190"/>
-<mapEntry key="list instruction sets" value="1381090"/>
-<mapEntry key="list signals" value="2381483"/>
+<mapEntry key="list breakpoint options" value="169495"/>
+<mapEntry key="list breakpoints" value="564305"/>
+<mapEntry key="list instruction sets" value="414337"/>
+<mapEntry key="list signals" value="479600"/>
 <mapEntry key="list translations" value="1485311"/>
-<mapEntry key="list watchpoint options" value="1110242"/>
-<mapEntry key="list watchpoints" value="2070613"/>
-<mapEntry key="loadfile" value="45787527"/>
+<mapEntry key="list watchpoint options" value="388650"/>
+<mapEntry key="list watchpoints" value="395628"/>
+<mapEntry key="loadfile" value="27643873"/>
 <mapEntry key="reload-symbol-file" value="64182088"/>
 <mapEntry key="remove" value="4245439"/>
-<mapEntry key="run script" value="51664071"/>
-<mapEntry key="set CWD" value="3071286"/>
-<mapEntry key="set breakpoint properties" value="8369119"/>
-<mapEntry key="set debug-from" value="1091578"/>
-<mapEntry key="source image_import.py" value="4810350103"/>
-<mapEntry key="source use_model_semihosting.ds" value="19091971"/>
-<mapEntry key="start" value="41162802"/>
+<mapEntry key="run script" value="46502252"/>
+<mapEntry key="set CWD" value="1892621"/>
+<mapEntry key="set breakpoint properties" value="7576503"/>
+<mapEntry key="set debug-from" value="726729"/>
+<mapEntry key="source image_import.py" value="3809187071"/>
+<mapEntry key="source use_model_semihosting.ds" value="8515437"/>
+<mapEntry key="start" value="13830648"/>
 <mapEntry key="step" value="85277838"/>
 <mapEntry key="synchronizing trace ranges" value="20340"/>
 <mapEntry key="toggleBreakpoint" value="5372006"/>
 <mapEntry key="updateBreakpointLocation" value="1672225"/>
 <mapEntry key="updating MMU tables" value="34024302"/>
-<mapEntry key="waitForTargetToStop" value="9365869"/>
+<mapEntry key="waitForTargetToStop" value="7578278"/>
 </mapAttribute>
 <intAttribute key="DEBUG_TAB..RESOURCES.COUNT" value="0"/>
 <booleanAttribute key="EVENT_VIEWER_ENABLED" value="false"/>
@@ -229,7 +229,7 @@
 <stringAttribute key="dtsl_options_file" value="default"/>
 <stringAttribute key="dtsl_tracecapture_option" value="options.traceBuffer.traceCaptureDevice"/>
 <booleanAttribute key="linuxOS" value="false"/>
-<stringAttribute key="model_params" value="-C bp.secure_memory=false -C cache_state_modelled=1 -a cluster0.cpu0=&quot;C:\Git\ArmVirtualPlatformCNN\ArmMLVP_MNIST\ArmMLVP_MNIST.axf&quot; --plugin st=&quot;C:\Program Files\DS-5 v5.28.0\sw\models\bin\FastlineTrace.dll&quot; -C TRACE.st.config=&quot;C:\Git\ArmVirtualPlatformCNN\ArmMLVP_MNIST\Fastline\FastlineConfig\CA55-system-config.json&quot; -C TRACE.st.counters-config-file=&quot;C:\Git\ArmVirtualPlatformCNN\ArmMLVP_MNIST\Fastline\FastlineConfig\CA55-counter-config.json&quot; -C TRACE.st.output-directory=&quot;C:\Git\ArmVirtualPlatformCNN\ArmMLVP_MNIST\Fastline\FastlineReport&quot; -C TRACE.st.apc-capture=CA55_MNIST_O3 --cpi-file=&quot;C:\Git\ArmCNN\ArmVirtualPlatformCNN\ArmMLVP_MNIST\cpi_file.txt&quot;"/>
+<stringAttribute key="model_params" value="-C bp.secure_memory=false -C cache_state_modelled=1 -a cluster0.cpu0=&quot;C:\Git\ArmVirtualPlatformCNN\ArmMLVP_MNIST\ArmMLVP_MNIST.axf&quot; --plugin st=&quot;C:\Program Files\DS-5 v5.28.0\sw\models\bin\FastlineTrace.dll&quot; -C TRACE.st.config=&quot;C:\Git\ArmVirtualPlatformCNN\ArmMLVP_MNIST\Fastline\FastlineConfig\CA55-system-config.json&quot; -C TRACE.st.counters-config-file=&quot;C:\Git\ArmVirtualPlatformCNN\ArmMLVP_MNIST\Fastline\FastlineConfig\CA55-counter-config.json&quot; -C TRACE.st.output-directory=&quot;C:\Git\ArmVirtualPlatformCNN\ArmMLVP_MNIST\Fastline\FastlineReport&quot; -C TRACE.st.apc-capture=ArmMLVP_CA55x1_MNIST_O3 --cpi-file=&quot;C:\Git\ArmVirtualPlatformCNN\ArmMLVP_MNIST\cpi_file.txt&quot;"/>
 <booleanAttribute key="runAfterConnect" value="false"/>
 <stringAttribute key="runScriptAfterConnect" value="${workspace_loc:/ArmMLVP_MNIST/mnist/image_import.py}"/>
 <stringAttribute key="runTargetInitializationScript" value="${workspace_loc:/ArmMLVP_MNIST/use_model_semihosting.ds}"/>
