@@ -1,0 +1,224 @@
+<html xmlns:fn="http://www.w3.org/2005/xpath-functions">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>PMUv3 example for ARMv8-A and ARM Compiler 6 or Linaro bare-metal GCC</title>
+<style type="text/css">
+    body { font-size: 62.5%;    /* default 1.0em = 16px, so 62.5% of 16 = 10. Therefore, 1.0em now = 10px, 1.2em now = 12px etc. */
+        font-family: Verdana, Arial, "Lucida Grande", sans-serif; margin: 10px; padding: 0; background: #fff; min-width: 999px; }
+    /* Content Styling */
+    .para { font-size: 1.2em; margin-bottom: 0px; margin-top: 10px; }
+    p { font-size: 1.2em; margin-bottom: 0px; margin-top: 10px; }
+    h1 { font-size: 1.6em; color: #025066; margin-top: 0px; margin-bottom: 0px; }
+    h2 { font-size: 1.4em; font-weight: bold; color: #025066; margin-bottom: 0px; }
+    h3 { font-size: 1.2em; font-weight: bold; color: #025066; margin-bottom: 0px; }
+    a { color: #127490; }
+    a:hover { color: #014153; }
+    div.indent { margin-left:10px; margin-right: 10px; margin-bottom: 0px; margin-top: 10px; }
+    div.note { font-size: 1.0em; margin-left:10px; margin-right: 10px; margin-bottom: 0px; margin-top: 10px; }
+    .table { margin-top: 5px; margin-bottom: 5px; padding:0px; }
+    ul li { font-size: 1.0em; list-style-image: url(images/bullet_blue.png); }
+    div.toc ul li { font-size: 1.0em; list-style-image: url(images/bullet_blue.png); }
+    .table-cell { font-size: 75%; }
+    .image { margin-top: 5px; margin-bottom: 5px; padding:0px; }
+    .note { margin-bottom: 15px; background: #E0E0E0 }
+    .toc { font-size: 115%; margin-left: 20px; margin-top: 10px; margin-bottom: 15px; }
+    .italic { font-style: italic; }
+    .bold { font-weight: bold; }
+    .emphasis { font-weight: bold; font-style: italic; }
+    .underline { text-decoration: underline; }
+    .bold-underline { text-decoration: underline; font-weight: bold; }
+    .arg { font-family: 'Lucida Sans Typewriter', 'Courier New', Courier, monospace; color:#333399; }
+    .repl { font-style: italic; }
+    .code { font-size: 1.2em; margin-top: 2px; margin-left: 20px; margin-bottom: 2px; color: #333399;
+       font-family: 'Lucida Sans Typewriter', 'Courier New', Courier, monospace; }
+    .menu { font-weight: bold; }
+    .interface { font-weight: bold; }
+    ul {margin-top: 2px; margin-bottom: 5px; }
+    ol {list-style-type:decimal; margin-top: 2px; margin-bottom: 5px; }
+    ol ol {list-style-type:lower-alpha; margin-top: 2px; margin-bottom: 5px; }
+    ol ol ol {list-style-type:lower-roman; margin-top: 2px; margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+    
+    <a name="PMUv3%20example%20for%20ARMv8-A%20and%20ARM%20Compiler%206%20or%20Linaro%20bare-metal%20GCC"></a><h1>PMUv3 example for ARMv8-A and ARM Compiler 6 or Linaro bare-metal GCC - ARM®DS-5™</h1>
+    
+        <div class="para">An example showing how to configure and read the PMU counters for ARMv8-A bare-metal applications with ARM Compiler 6 or Linaro bare-metal GCC and DS-5 Debugger.
+        Note: A DS-5 Ultimate Edition license is required to make full use of this example.</div>
+    
+
+    <div class="indent">
+        <a name="Purpose%20and%20scope"></a><h2>Purpose and scope</h2>
+        <div class="para">This example demonstrates how to configure and read the PMU counters in ARMv8-A bare-metal applications with ARM Compiler 6 or Linaro bare-metal GCC and DS-5 Debugger.</div>
+        <div class="para">This example includes startup code (vector table, reset handler, interrupt handler, cache and MMU configuration, interrupt controller (GICv3) and timer initialization, NEON support), with a simple main() application,
+        and retargeted printf() output to a UART.
+        The code is built for AArch64 only and illustrates the DS-5 Debugger support for Exception Level changing.</div>
+
+        <div class="para">This example is intended to be built with ARM Compiler 6 or Linaro bare-metal GCC. If you wish to modify and rebuild the example, you must use ARM Compiler 6 or Linaro bare-metal GCC to rebuild it.</div>
+        <div class="para">The executable is intended for running on the Cortex-A35x1, Cortex-A53x1, Cortex-A57x1, Cortex-A57x2-A53x4, Cortex-A72x1, Cortex-A57x2-A53x4, Cortex-A73x1 and Cortex-A73x2-A53x4 models (with the DS-5 Ultimate Edition), and on the ARMv8x1 Foundation Platform model.</div>
+        <div class="para">A pre-built executable (<span class="arg">PMU_AArch64.axf</span>) is provided.</div>
+        <div class="para">This example does not depend on any semihosting support being provided by DS-5 Debugger.</div>
+        <div class="para">A ready-made launch configuration <span class="arg">PMU_AArch64_FVP_Cortex-A73x2-A53x4.launch</span> is provided.</div>
+        <div class="para">For a good debug view, the compiler's optimization level is set to -O1 in the <span class="arg">makefile</span>.
+         You can change this to raise the optimization level to -O2 or -O3 for higher performance code generation, but at the cost of a worse debug view.</div>
+    </div>
+
+    <div class="indent">
+        <a name="Building%20the%20example"></a><h2>Building the example</h2>
+        <div class="para">This example can be built with ARM Compiler 6 or Linaro bare-metal GCC using the supplied Eclipse (makefile builder) project, or directly on the command-line with the supplied <span class="arg">makefile</span> using the <span class="arg">make</span> utility.</div>
+        <div class="para">By default the <span class="arg">makefile</span> uses <span class="arg">CC = armclang</span>. Change it to <span class="arg">CC = aarch64-elf-gcc</span> to build it with Linaro bare-metal GCC.</div>
+    </div>
+
+    <div class="indent">
+        <a name="Building%20on%20the%20command-line"></a><h2>Building on the command-line</h2>
+        <div class="para">To build the example on the command-line with the supplied <span class="arg">make</span> utility:</div>
+        <ul>
+            <li><div class="para">On Windows, open a <span class="interface">DS-5 Command Prompt</span> from the Start menu, run the <span class="arg">select_toolchain</span> utility, and select <span class="arg">ARM Compiler 6 (DS-5 built-in)</span> from the list</div></li>
+            <li><div class="para">On Linux, run the <span class="arg">suite_exec</span> utility with the <span class="arg">--toolchain</span> option to select the compiler and start a shell configured for the suite environment, for example: <span class="arg">~/DS-5/bin/suite_exec --toolchain "ARM Compiler 6 (DS-5 built-in)" bash</span>
+</div></li>
+        </ul>
+        <div class="para">Then navigate to the <span class="arg">.../PMU_AArch64</span> directory, and type:</div>
+        <div class="para"><span class="arg">make</span></div>
+        <div class="para">The usual <span class="arg">make</span> rules: <span class="arg">clean</span> and <span class="arg">all</span> are provided in the <span class="arg">makefile</span>.</div>
+        <div class="para">The makefile compiles the sources as:</div>
+        <div class="para"><span class="arg">armclang -c --target=aarch64-arm-none-eabi -g -O1</span></div>
+    </div>
+
+    
+    <div class="indent">
+        <a name="Building%20from%20Eclipse"></a><h2>Building from Eclipse</h2>
+        <div class="para">To build the supplied Eclipse projects:</div>
+        
+    <ol>
+        <li><div class="para">In the Project Explorer view, select the project you want to build.</div></li>
+        <li><div class="para">Select <span class="menu">Project<span class="para"> → </span>Build Project</span>.</div></li>
+    </ol>
+
+    </div>
+
+
+    <div class="indent">
+        <a name="Running%20the%20example"></a><h2>Running the example</h2>
+        <ol>
+            <li><div class="para">Select <span class="menu">Run<span class="para"> → </span>Debug Configurations...</span>.</div></li>
+            <li><div class="para">Select <span class="arg">PMU_AArch64</span> from the list of DS-5 Debugger configurations.</div></li>
+            <li><div class="para">Click on <span class="interface">Debug</span> to start debugging.  The executable image will be downloaded to the target and the program counter set to the entry point at <span class="arg">start64</span> in <span class="arg">startup.s</span>.</div></li>
+            <li><div class="para">Debugging requires the DS-5 Debug perspective. If the Confirm Perspective Switch dialog box opens, click on
+                <span class="interface">Yes</span> to switch perspective.</div></li>
+            <li>
+<div class="para">Run the executable (press F8).  The following output is displayed in the <span class="interface">Target Console</span>, showing that interrupts are occurring:</div>
+<pre class="code">
+DS-5 PMUv3 Example, based on ARMv8-A SMP Prime Number Generator Example
+
+Core 0 has 6 PMU counters
+It supports the following common event types:
+    0 (SW_INCR)
+    1 (L1I_CACHE_REFILL)
+    2 (L1I_TLB_REFILL)
+    3 (L1D_CACHE_REFILL)
+    4 (L1D_CACHE)
+    5 (L1D_TLB_REFILL)
+    6 (LD_RETIRED)
+    7 (ST_RETIRED)
+    8 (INST_RETIRED)
+    9 (EXC_TAKEN)
+    10 (EXC_RETURN)
+    11 (CID_WRITE_RETIRED)
+    12 (PC_WRITE_RETIRED)
+    13 (BR_IMMED_RETIRED)
+    14 (BR_RETURN_RETIRED)
+    15 (UNALIGNED_LDST_RETIRED)
+    16 (BR_MIS_PRED)
+    17 (CPU_CYCLES)
+    20 (L1I_CACHE)
+    25 (BUS_ACCESS)
+    28 (TTBR_WRITE_RETIRED)
+    29 (BUS_CYCLES)
+    30 (CHAIN)
+
+Core 1 has 6 PMU counters
+It supports the following common event types:
+    0 (SW_INCR)
+    1 (L1I_CACHE_REFILL)
+    2 (L1I_TLB_REFILL)
+    3 (L1D_CACHE_REFILL)
+    4 (L1D_CACHE)
+    5 (L1D_TLB_REFILL)
+    6 (LD_RETIRED)
+    7 (ST_RETIRED)
+    8 (INST_RETIRED)
+    9 (EXC_TAKEN)
+    10 (EXC_RETURN)
+    11 (CID_WRITE_RETIRED)
+    12 (PC_WRITE_RETIRED)
+    13 (BR_IMMED_RETIRED)
+    14 (BR_RETURN_RETIRED)
+    15 (UNALIGNED_LDST_RETIRED)
+    16 (BR_MIS_PRED)
+    17 (CPU_CYCLES)
+    20 (L1I_CACHE)
+    25 (BUS_ACCESS)
+    28 (TTBR_WRITE_RETIRED)
+    29 (BUS_CYCLES)
+    30 (CHAIN)
+
+CPU 0: Starting calculation
+CPU 1: Starting calculation
+:
+:
+Handling PMU sample interrupt on core 0
+core 0 cycle count is 916105
+core 0 counter 0 (SW_INCR) is 2672
+core 0 counter 1 (L1D_CACHE_REFILL) is 11125
+core 0 counter 2 (L1D_CACHE) is 56450
+core 0 counter 3 (CPU_CYCLES) is 935464
+core 0 counter 4 (INST_RETIRED) is 940723
+core 0 counter 5 (PC_WRITE_RETIRED) is 193504
+:
+</pre>
+            </li>
+        </ol>
+    </div>
+
+    <div class="indent">
+        <a name="Changing%20the%20events%20that%20the%20counters%20count"></a><h2>Changing the events that the counters count</h2>
+        <ol>
+            <li><div class="para">Open <span class="arg">src/pmu_interrupt.c</span> and you will see an array called <span class="arg">events_to_count</span>.</div></li>
+            <li><div class="para">Change <span class="arg">events_to_count</span> to include some different event types in the first 8 (Only as many as there are counters on the core will be counted).
+            You can add any events that the core supports. This example prints all the available common event types as it starts. You can also add any implementation defined events for the core.</div></li>
+            <li><div class="para">Build and run the example again and you will see the new events being counted.</div></li>
+        </ol>
+    </div>
+
+    <div class="indent">
+        <a name="Known%20issues%20and%20troubleshooting"></a><h2>Known issues and troubleshooting</h2>
+        <ul>
+            
+    <li>
+<div class="para">On Windows 7 and later, launching a debug configuration to connect to a Fixed Virtual Platform (FVP) model may give the following error: <span class="arg">Windows cannot find "C:\Windows\System32\telnet.exe"</span> or <span class="arg">No telnet executable was found on your system</span>.  ARM FVP models make use of "telnet" as a serial terminal, to enable serial data to be transferred from application code running on an ARM FVP via a modelled UART to a serial terminal.  This error occurs when the telnet client is disabled or otherwise unavailable on your computer.  The telnet client is not enabled by default on Windows 7 and later.  To enable the telnet client on your computer:</div>
+        <ol>
+            <li><div class="para">From the Windows Start menu, select Control Panel &gt; Programs and Features</div></li>
+            <li><div class="para">Click on "Turn Windows features on or off"</div></li>
+            <li><div class="para">From the list that appears, select the "Telnet Client" checkbox</div></li>
+            <li><div class="para">Click "OK" to close the dialog.</div></li>
+        </ol>
+    </li>
+
+        </ul>
+    </div>
+
+    <h2>See also:</h2>
+<div class="indent"><ul>
+        <li><div class="para"><a href="https://developer.arm.com/docs/100953/latest/configuring-debug-connections-in-ds-5-debugger"><i>Configuring debug connections in DS-5 Debugger</i> in <i>DS-5 Debugger User Guide</i></a></div></li>
+        <li><div class="para"><a href="https://developer.arm.com/docs/100953/latest/"><i>DS-5 Debugger User Guide</i></a></div></li>
+        <li><div class="para"><a href="https://developer.arm.com/docs/100954/latest/"><i>DS-5 Debugger Command Reference</i></a></div></li>
+        <li><div class="para"><a href="https://developer.arm.com/docs/100966/latest/"><i>Fixed Virtual Platforms FVP Reference Guide</i></a></div></li>
+        <li><div class="para"><a href="https://developer.arm.com/docs/100067/latest/"><i>ARM Compiler 6 armclang Reference Guide</i></a></div></li>
+        <li><div class="para"><a href="https://developer.arm.com/docs/100069/latest"><i>ARM Compiler 6 armasm User Guide</i></a></div></li>
+        <li><div class="para"><a href="https://developer.arm.com/docs/100070/latest/"><i>ARM Compiler 6 armlink User Guide</i></a></div></li>
+        <li><div class="para"><a href="https://developer.arm.com/docs/100066/latest/"><i>ARM Compiler 6 Software Development Guide</i></a></div></li>
+    </ul></div>
+<br><br><div align="left" class="legal">
+<hr>Copyright© 2010-2017 ARM Limited. All Rights Reserved.</div>
+</body>
+</html>

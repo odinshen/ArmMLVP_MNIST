@@ -1,0 +1,6 @@
+# Include FilePath=C:\ARM\Fast_Models\FastModelsPortfolio_11.2\etc\CPIPredefines\ARMv8A_A64_Predefines.txt
+# Include FilePath=C:\ARM\Fast_Models\FastModelsPortfolio_11.2\etc\CPIPredefines\ARMv8A_A32_Predefines.txt
+# Include FilePath=C:\ARM\Fast_Models\FastModelsPortfolio_11.2\etc\CPIPredefines\ARMv8A_T32_Predefines.txt
+
+
+Defaults ISet=A64 CpuType=* Cpi=3

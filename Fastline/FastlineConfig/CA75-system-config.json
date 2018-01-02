@@ -1,0 +1,6 @@
+[
+  {
+    "Subsystem_name": "FVP_Base_Cortex_A75x1.cluster0.cpu0",
+    "Subsystem_config_file": "C:\\git\\ArmVirtualPlatformCNN\\ArmMLVP_MNIST\\Fastline\\FastlineConfig\\cluster-config-bare-metal.json"
+  }
+]

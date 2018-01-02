@@ -1,0 +1,9 @@
+{
+  "operating-system": "none",
+  "sampling-frequency": 10000,
+  "app-name": "ArmMLVP_MNIST.axf",
+  "app-proc-id": 100000,
+  "symbol-info-files": [
+    "ArmMLVP_MNIST.axf.csv"
+  ]
+}
