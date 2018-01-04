@@ -30,6 +30,8 @@ static unsigned int cpu_active_count = 0;
 static unsigned int cpu_finished_count = 0;
 
 static unsigned int next_image;
+//static unsigned int conv_mode;
+
 
 // printf lock to regulate CPU access to an output device
 mutex print_lock __attribute__ ((aligned (64)));
@@ -74,6 +76,7 @@ __attribute__((noreturn)) void MainApp(void)
 {
     unsigned long core;
     unsigned int test_mode;
+    unsigned int conv_mode;
     unsigned int test_model;
     unsigned int user_cmd;
 	unsigned int image_result;
@@ -144,7 +147,23 @@ __attribute__((noreturn)) void MainApp(void)
 		else {
 			printf("CNN Selected Image Evaluation\n\n");
 		}
-        printf("Select test model\n");
+
+		conv_mode = *CONVMODE;
+		if (conv_mode == 1) {
+			printf("Conv mode #1 \n\n");
+		}
+		else if (conv_mode == 2) {
+			printf("Conv mode #2\n\n");
+		}
+		else if (conv_mode == 3) {
+			printf("Conv mode #3\n\n");
+		}
+		else {
+			conv_mode = 2;
+			printf("Conv deafult mode #2\n\n");
+		}
+
+		printf("Select test model\n");
 		if (test_model == TESTMODEL_MNIST) {
 			printf("MNIST CNN\n\n");
 		}

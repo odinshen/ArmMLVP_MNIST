@@ -18,6 +18,8 @@ int mnist_cnn_eval(
 ) {
     static layer_structure lay;
 
+    unsigned int conv_mode;
+
 //    unsigned int workspace_inout = MNIST_TEST_BASE + MNIST_WORKSPACE_BASE + 0x18000 * idx;
     unsigned int workspace_inout = WORK_IMAGE_X(idx);
     unsigned int workspace_layer1 = workspace_inout + 0x1000;
@@ -26,6 +28,11 @@ int mnist_cnn_eval(
     unsigned int workspace_layer4 = workspace_inout + 0x10000;
     unsigned int workspace_layer5 = workspace_inout + 0x11000;
     unsigned int workspace_output = workspace_inout + 0x11300;
+
+	conv_mode = *CONVMODE;
+	if (!conv_mode) {
+		conv_mode = 2;  // default mode
+	}
 
     mnist_pre_proc(
         test_images,
@@ -42,13 +49,35 @@ int mnist_cnn_eval(
     lay.output_rows = 24;
     lay.output_columns = 24;
     lay.relu_activation = 1;    // Activation:ReLU
-    convolution(
-        &lay,
-        (float*)workspace_inout,
-        (float*)workspace_layer1,
-        (float*)KERASLAYER0_WEIGHTS,
-        (float*)KERASLAYER0_BIASES
-    );
+    if (conv_mode == 2) {
+    	convolution_conv2(
+    			&lay,
+				(float*)workspace_inout,
+				(float*)workspace_layer1,
+				(float*)KERASLAYER0_WEIGHTS,
+				(float*)KERASLAYER0_BIASES
+    	);
+    }
+#ifdef CNN_CONV_3
+    else if (conv_mode == 3) {
+    	convolution_conv3(
+    			&lay,
+				(float*)workspace_inout,
+				(float*)workspace_layer1,
+				(float*)KERASLAYER0_WEIGHTS,
+				(float*)KERASLAYER0_BIASES
+    	);
+    }
+#endif
+    else {
+    	convolution(
+    			&lay,
+				(float*)workspace_inout,
+				(float*)workspace_layer1,
+				(float*)KERASLAYER0_WEIGHTS,
+				(float*)KERASLAYER0_BIASES
+    	);
+    }
 
     // keras_lay[1]
     lay.input_channel = 16;
@@ -76,13 +105,35 @@ int mnist_cnn_eval(
     lay.output_rows = 8;
     lay.output_columns = 8;
     lay.relu_activation = 1;    // Activation:ReLU
-    convolution(
-        &lay,
-        (float*)workspace_layer2,
-        (float*)workspace_layer3,
-        (float*)KERASLAYER2_WEIGHTS,
-        (float*)KERASLAYER2_BIASES
-    );
+    if (conv_mode == 2) {
+    	convolution_conv2(
+    			&lay,
+				(float*)workspace_layer2,
+				(float*)workspace_layer3,
+				(float*)KERASLAYER2_WEIGHTS,
+				(float*)KERASLAYER2_BIASES
+    	);
+    }
+#ifdef CNN_CONV_3
+    else if (conv_mode == 3) {
+    	convolution_conv3(
+    			&lay,
+				(float*)workspace_layer2,
+				(float*)workspace_layer3,
+				(float*)KERASLAYER2_WEIGHTS,
+				(float*)KERASLAYER2_BIASES
+    	);
+    }
+#endif
+    else {
+    	convolution(
+    			&lay,
+				(float*)workspace_layer2,
+				(float*)workspace_layer3,
+				(float*)KERASLAYER2_WEIGHTS,
+				(float*)KERASLAYER2_BIASES
+    	);
+    }
 
     // keras_lay[3]
     lay.input_channel = 32;
@@ -143,6 +194,8 @@ int mnist_cnn_eval(
     );
 
     *result = post_proc((float*)workspace_output, lay.output_channel);
+
+	printf("Conv_mode: %d", conv_mode);
 
     return 0;
 }

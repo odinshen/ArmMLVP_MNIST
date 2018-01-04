@@ -23,6 +23,7 @@
 
 #define HOST_CONFIG_AUTO_BASE        0x800FFFFF // CA55/CA53_CA73
 #define HOST_CONFIG_CNN_BASE         0x800FFFFB // CA55/CA53_CA73
+#define HOST_CONFIG_CONV_BASE        0x800FFFF7 // CA55/CA53_CA73
 
 #define TESTMODE_AUTO  0
 #define TESTMODE_IMAGE 1
@@ -51,9 +52,10 @@
 //#define AUTOTESTIMG ((volatile unsigned char *) (MNIST_EVAL_BASE + 0x300FFFF))
 #define AUTOTESTIMG  ((volatile unsigned char *) (HOST_CONFIG_AUTO_BASE))
 #define CNNSELECTING ((volatile unsigned char *) (HOST_CONFIG_CNN_BASE))
+#define CONVMODE     ((volatile unsigned char *) (HOST_CONFIG_CONV_BASE))
 
 
-//#define CNN_CONV_1     1    // Original
+#define CNN_CONV_1     1    // Original
 #define CNN_CONV_2     1	// API
-//#define CNN_CONV_3     1	// API w/ static register
+#define CNN_CONV_3     1	// API w/ Engine
 //#define CNN_CONV_4     1	// API w/ Engine

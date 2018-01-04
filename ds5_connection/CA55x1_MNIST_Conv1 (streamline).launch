@@ -5,58 +5,58 @@
 <stringAttribute key="ANDROID_APP_DIR" value=""/>
 <stringAttribute key="ANDROID_PROCESS_NAME" value=""/>
 <mapAttribute key="AverageDurationTracker">
-<mapEntry key="*Fetching Data Model" value="2770942"/>
+<mapEntry key="*Fetching Data Model" value="671341"/>
 <mapEntry key="*FunctionLoader" value="106264492"/>
-<mapEntry key="*list global low level symbols" value="1249987"/>
+<mapEntry key="*list global low level symbols" value="2251134"/>
 <mapEntry key="*loading memory from target" value="4174949"/>
 <mapEntry key="*loading values from target" value="3101648"/>
 <mapEntry key="*updating expressions" value="366335"/>
 <mapEntry key="*updating local_variables" value="902414"/>
 <mapEntry key="*updating registers" value="66275861"/>
-<mapEntry key="*updating variables" value="1829947"/>
-<mapEntry key="AddEventObserver" value="6602669"/>
+<mapEntry key="*updating variables" value="366476"/>
+<mapEntry key="AddEventObserver" value="3752273"/>
 <mapEntry key="Evaluate" value="4048736"/>
 <mapEntry key="ListRegimeWarningsCommand" value="572535"/>
-<mapEntry key="Retrieving globals list" value="64895460"/>
-<mapEntry key="areCachesAvailable" value="413656"/>
+<mapEntry key="Retrieving globals list" value="7154640"/>
+<mapEntry key="areCachesAvailable" value="297030"/>
 <mapEntry key="backtrace" value="16511495"/>
-<mapEntry key="break" value="15183059"/>
-<mapEntry key="compute execution mode" value="102263145"/>
-<mapEntry key="continue" value="15497302"/>
+<mapEntry key="break" value="4203781"/>
+<mapEntry key="compute execution mode" value="235624"/>
+<mapEntry key="continue" value="14095461"/>
 <mapEntry key="core" value="9396309"/>
 <mapEntry key="disassemble" value="27010121"/>
-<mapEntry key="evaluate address" value="3847148"/>
+<mapEntry key="evaluate address" value="650761"/>
 <mapEntry key="get byte order" value="306047"/>
-<mapEntry key="get capabilities" value="2465596"/>
+<mapEntry key="get capabilities" value="101582"/>
 <mapEntry key="get cwd" value="162047"/>
-<mapEntry key="get execution addresss" value="755840"/>
-<mapEntry key="get source lines" value="399537"/>
-<mapEntry key="getValidEncodings" value="481099"/>
-<mapEntry key="initialize command help" value="33960547"/>
-<mapEntry key="interrupt" value="576774"/>
-<mapEntry key="list breakpoint options" value="241470"/>
-<mapEntry key="list breakpoints" value="614838"/>
-<mapEntry key="list instruction sets" value="1570968"/>
-<mapEntry key="list signals" value="5924630"/>
+<mapEntry key="get execution addresss" value="141858"/>
+<mapEntry key="get source lines" value="108936"/>
+<mapEntry key="getValidEncodings" value="307461"/>
+<mapEntry key="initialize command help" value="25437854"/>
+<mapEntry key="interrupt" value="438510"/>
+<mapEntry key="list breakpoint options" value="139334"/>
+<mapEntry key="list breakpoints" value="456882"/>
+<mapEntry key="list instruction sets" value="224774"/>
+<mapEntry key="list signals" value="1608136"/>
 <mapEntry key="list translations" value="1485311"/>
-<mapEntry key="list watchpoint options" value="2475216"/>
-<mapEntry key="list watchpoints" value="1167111"/>
-<mapEntry key="loadfile" value="94584029"/>
+<mapEntry key="list watchpoint options" value="211544"/>
+<mapEntry key="list watchpoints" value="252171"/>
+<mapEntry key="loadfile" value="28528989"/>
 <mapEntry key="reload-symbol-file" value="64182088"/>
 <mapEntry key="remove" value="4245439"/>
-<mapEntry key="run script" value="185852699"/>
-<mapEntry key="set CWD" value="5399074"/>
-<mapEntry key="set breakpoint properties" value="14808408"/>
-<mapEntry key="set debug-from" value="1094637"/>
-<mapEntry key="source image_import.py" value="6832010857"/>
-<mapEntry key="source use_model_semihosting.ds" value="26847776"/>
-<mapEntry key="start" value="79658396"/>
+<mapEntry key="run script" value="47601714"/>
+<mapEntry key="set CWD" value="1810002"/>
+<mapEntry key="set breakpoint properties" value="5312530"/>
+<mapEntry key="set debug-from" value="603974"/>
+<mapEntry key="source image_import.py" value="3932101453"/>
+<mapEntry key="source use_model_semihosting.ds" value="11307865"/>
+<mapEntry key="start" value="12067921"/>
 <mapEntry key="step" value="85277838"/>
 <mapEntry key="synchronizing trace ranges" value="20340"/>
 <mapEntry key="toggleBreakpoint" value="5372006"/>
 <mapEntry key="updateBreakpointLocation" value="1672225"/>
 <mapEntry key="updating MMU tables" value="34024302"/>
-<mapEntry key="waitForTargetToStop" value="18409374"/>
+<mapEntry key="waitForTargetToStop" value="5706547"/>
 </mapAttribute>
 <intAttribute key="DEBUG_TAB..RESOURCES.COUNT" value="0"/>
 <booleanAttribute key="EVENT_VIEWER_ENABLED" value="false"/>
@@ -72,43 +72,37 @@
 <stringAttribute key="FILES.DEBUG_RESIDENT_ANDROID.RESOURCES.0.VALUE" value=""/>
 <intAttribute key="FILES.DEBUG_RESIDENT_ANDROID.RESOURCES.COUNT" value="1"/>
 <listAttribute key="FILES.DEBUG_RESIDENT_APP"/>
-<stringAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.0.TYPE" value="APPLICATION_ON_TARGET"/>
+<stringAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.0.TYPE" value="TARGET_WORKING_DIR"/>
 <stringAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.0.VALUE" value=""/>
-<stringAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.1.TYPE" value="TARGET_WORKING_DIR"/>
+<stringAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.1.TYPE" value="APPLICATION_ON_TARGET"/>
 <stringAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.1.VALUE" value=""/>
 <intAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.COUNT" value="2"/>
-<listAttribute key="FILES.DOWNLOAD_AND_DEBUG">
-<listEntry value="ON_DEMAND_LOAD"/>
-<listEntry value="ALSO_LOAD_SYMBOLS"/>
-</listAttribute>
+<listAttribute key="FILES.DOWNLOAD_AND_DEBUG"/>
 <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.OPTION.ALSO_LOAD_SYMBOLS" value="false"/>
 <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.OPTION.ON_DEMAND_LOAD" value="true"/>
-<stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.TYPE" value="TARGET_WORKING_DIR"/>
+<stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.TYPE" value="TARGET_DOWNLOAD_DIR"/>
 <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.VALUE" value=""/>
 <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.OPTION.ALSO_LOAD_SYMBOLS" value="false"/>
 <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.OPTION.ON_DEMAND_LOAD" value="true"/>
-<stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.TYPE" value="TARGET_DOWNLOAD_DIR"/>
+<stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.TYPE" value="APP_ON_HOST_TO_DOWNLOAD"/>
 <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.VALUE" value=""/>
 <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.OPTION.ALSO_LOAD_SYMBOLS" value="false"/>
 <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.OPTION.ON_DEMAND_LOAD" value="true"/>
-<stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.TYPE" value="APP_ON_HOST_TO_DOWNLOAD"/>
+<stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.TYPE" value="TARGET_WORKING_DIR"/>
 <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.VALUE" value=""/>
 <intAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.COUNT" value="3"/>
-<listAttribute key="FILES.DOWNLOAD_DEBUG">
-<listEntry value="ON_DEMAND_LOAD"/>
-<listEntry value="ALSO_LOAD_SYMBOLS"/>
-</listAttribute>
+<listAttribute key="FILES.DOWNLOAD_DEBUG"/>
 <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.OPTION.ALSO_LOAD_SYMBOLS" value="false"/>
 <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.OPTION.ON_DEMAND_LOAD" value="true"/>
-<stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.TYPE" value="TARGET_WORKING_DIR"/>
+<stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.TYPE" value="TARGET_DOWNLOAD_DIR"/>
 <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.VALUE" value=""/>
 <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.OPTION.ALSO_LOAD_SYMBOLS" value="false"/>
 <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.OPTION.ON_DEMAND_LOAD" value="true"/>
-<stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.TYPE" value="TARGET_DOWNLOAD_DIR"/>
+<stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.TYPE" value="APP_ON_HOST_TO_DOWNLOAD"/>
 <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.VALUE" value=""/>
 <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.OPTION.ALSO_LOAD_SYMBOLS" value="false"/>
 <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.OPTION.ON_DEMAND_LOAD" value="true"/>
-<stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.TYPE" value="APP_ON_HOST_TO_DOWNLOAD"/>
+<stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.TYPE" value="TARGET_WORKING_DIR"/>
 <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.VALUE" value=""/>
 <intAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.COUNT" value="3"/>
 <intAttribute key="FILES.DOWNLOAD_DEBUG_ANDROID.RESOURCES.COUNT" value="0"/>
@@ -144,7 +138,7 @@
 <booleanAttribute key="HOST_WORKING_DIR_USE_DEFAULT" value="true"/>
 <listAttribute key="ITM_CHANNEL_LIST"/>
 <booleanAttribute key="KEY_COMMANDS_AFTER_CONNECT" value="true"/>
-<stringAttribute key="KEY_COMMANDS_AFTER_CONNECT_TEXT" value="add-symbol-file &quot;${workspace_loc:/ArmMLVP_MNIST/ArmMLVP_MNIST.axf}&quot; EL1N:0&#13;&#10;restore &quot;${workspace_loc:/ArmMLVP_MNIST/mnist/mnist_cnn_parameter.bin}&quot; binary S:0x80100000"/>
+<stringAttribute key="KEY_COMMANDS_AFTER_CONNECT_TEXT" value="add-symbol-file &quot;${workspace_loc:/ArmMLVP_MNIST/ArmMLVP_MNIST.axf}&quot; EL1N:0&#13;&#10;restore &quot;${workspace_loc:/ArmMLVP_MNIST/mnist/mnist_cnn_parameter.bin}&quot; binary S:0x80100000&#13;&#10;memory set 0x800FFFF7 0 0x1"/>
 <intAttribute key="Messages.POST_TRIGGER_CAPTURE_SIZE.getLocalisedValue().FMTrace" value="50"/>
 <booleanAttribute key="Messages.STOP_ON_TRIGGER.getLocalisedValue().FMTrace" value="false"/>
 <intAttribute key="POST_TRIGGER_CAPTURE_SIZE" value="50"/>
@@ -176,6 +170,9 @@
 </listAttribute>
 <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.MemoryView.addresses">
 <listEntry value=""/>
+<listEntry value="0x8016e000"/>
+<listEntry value="0x80160000"/>
+<listEntry value="0x80161000"/>
 <listEntry value="0x80002c58"/>
 <listEntry value="0x000000002F000000"/>
 <listEntry value="EL3:0x27000000"/>
@@ -189,6 +186,9 @@
 <listEntry value="1024"/>
 <listEntry value="1024"/>
 <listEntry value="1024"/>
+<listEntry value="1024"/>
+<listEntry value="1024"/>
+<listEntry value="1024"/>
 </listAttribute>
 <listAttribute key="com.arm.debugger.views.common.AddressTracker.debugger.view.DisassemblyView.addresses">
 <listEntry value="&lt;Next Instruction&gt;"/>
@@ -196,13 +196,13 @@
 <listAttribute key="com.arm.debugger.views.common.AddressTracker.debugger.view.DisassemblyView.ranges">
 <listEntry value="100"/>
 </listAttribute>
-<stringAttribute key="config_db_activity_name" value="ARM_Cortex-A55_0"/>
+<stringAttribute key="config_db_activity_name" value="Debug Cortex-A55"/>
 <stringAttribute key="config_db_connection_keys" value="dtsl_config dtsl_tracecapture_option dtsl_config_script model_params config_file setup TCP_KILL_ON_EXIT TCP_DISABLE_EXTENDED_MODE"/>
 <stringAttribute key="config_db_connection_type" value="Bare Metal Debug"/>
-<stringAttribute key="config_db_platform_name" value="ArmVP_ML - CNN_CA55_VP"/>
+<stringAttribute key="config_db_platform_name" value="ARM FVP (Installed with DS-5) - Base_A55x1"/>
 <stringAttribute key="config_db_project_type" value="Bare Metal Debug"/>
 <stringAttribute key="config_db_project_type_id" value="BARE_METAL"/>
-<stringAttribute key="config_db_taxonomy_id" value="/platform/armvp_ml/cnn_ca55_vp"/>
+<stringAttribute key="config_db_taxonomy_id" value="/platform/armfvp_installedwithds_5_/base_a55x1"/>
 <stringAttribute key="config_file" value="CDB://cadi_config.xml"/>
 <booleanAttribute key="connectOnly" value="false"/>
 <listAttribute key="debugger.view.DisassemblyView:current">
@@ -235,7 +235,7 @@
 <stringAttribute key="dtsl_options_file" value="default"/>
 <stringAttribute key="dtsl_tracecapture_option" value="options.traceBuffer.traceCaptureDevice"/>
 <booleanAttribute key="linuxOS" value="false"/>
-<stringAttribute key="model_params" value="-C bp.secure_memory=false -C cache_state_modelled=1 "/>
+<stringAttribute key="model_params" value="-C bp.secure_memory=false -C cache_state_modelled=1 -a cluster0.cpu0=&quot;C:\Git\ArmVirtualPlatformCNN\ArmMLVP_MNIST\ArmMLVP_MNIST.axf&quot; --plugin st=&quot;C:\Program Files\DS-5 v5.28.0\sw\models\bin\FastlineTrace.dll&quot; -C TRACE.st.config=&quot;C:\Git\ArmVirtualPlatformCNN\ArmMLVP_MNIST\Fastline\FastlineConfig\CA55-system-config.json&quot; -C TRACE.st.counters-config-file=&quot;C:\Git\ArmVirtualPlatformCNN\ArmMLVP_MNIST\Fastline\FastlineConfig\CA55-counter-config.json&quot; -C TRACE.st.output-directory=&quot;C:\Git\ArmVirtualPlatformCNN\ArmMLVP_MNIST\Fastline\FastlineReport&quot; -C TRACE.st.apc-capture=ArmMLVP_CA55x1_MNIST_O3_Conv1 --cpi-file=&quot;C:\Git\ArmVirtualPlatformCNN\ArmMLVP_MNIST\cpi_file.txt&quot;"/>
 <booleanAttribute key="runAfterConnect" value="false"/>
 <stringAttribute key="runScriptAfterConnect" value="${workspace_loc:/ArmMLVP_MNIST/mnist/image_import.py}"/>
 <stringAttribute key="runTargetInitializationScript" value="${workspace_loc:/ArmMLVP_MNIST/use_model_semihosting.ds}"/>
@@ -256,7 +256,7 @@
 </mapAttribute>
 <listAttribute key="setup">
 <listEntry value="DS5://sw/debugger/configdb/Scripts/rtsm_launcher.py"/>
-<listEntry value="&quot;C:\Git\ArmVirtualPlatformCNN\FastModel\CA55_VP\Win64-Release-VC2013\isim_system_Win64-Release-VC2013.exe&quot;"/>
+<listEntry value="&quot;FVP_Base_Cortex-A55x1&quot;"/>
 </listAttribute>
 <stringAttribute key="stopAtExpression" value="*$ENTRYPOINT"/>
 <stringAttribute key="watchpoints" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;watchpoints&gt;&#10;&lt;/watchpoints&gt;&#10;"/>

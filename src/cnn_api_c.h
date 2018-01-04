@@ -14,6 +14,20 @@ int convolution(
     float *weights,
     float *biases
 );
+int convolution_conv2(
+    layer_structure *lay,
+    float *inputs,
+    float *outputs,
+    float *weights,
+    float *biases
+);
+int convolution_conv3(
+    layer_structure *lay,
+    float *inputs,
+    float *outputs,
+    float *weights,
+    float *biases
+);
 int max_pooling(
     layer_structure *lay,
     float *inputs,

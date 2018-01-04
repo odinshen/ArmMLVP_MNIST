@@ -1,2 +1,4 @@
-obj/startup.o: asm/startup.S asm/layout.h asm/GICv3_aliases.h \
-  asm/v8_mmu.h asm/v8_system.h
+obj/cnn_api_c.o: src/cnn_api_c.c \
+  C:\Program\ Files\DS-5\ v5.28.0\sw\ARMCompiler6.9\bin\..\include\stdlib.h \
+  C:\Program\ Files\DS-5\ v5.28.0\sw\ARMCompiler6.9\bin\..\include\stdio.h \
+  src/arm_cnn_inference.h src/mnist.h src/cnn_api_c.h
