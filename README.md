@@ -1,5 +1,5 @@
-# ArmV82_Keras_CNN_Inference
-This is `ArmV82_Keras_CNN_Inference`, a Arm machine learning prototyping software project, optimized for Arm Cortex v8 CPU arch.
+# ArmMLVP_MNIST
+This is `ArmMLVP_MNIST`, an Arm machine learning prototyping software project to help user to profiling Arm next generation CPU arch. for machine learning edgy computing, and also early optimizition before silicon back.
 
 1. Based on Keras mnist training database
 2. Will leverage Arm neon instruction set, http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0489e/CJAJIIGG.html
