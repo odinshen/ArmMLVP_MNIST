@@ -5,58 +5,58 @@
 <stringAttribute key="ANDROID_APP_DIR" value=""/>
 <stringAttribute key="ANDROID_PROCESS_NAME" value=""/>
 <mapAttribute key="AverageDurationTracker">
-<mapEntry key="*Fetching Data Model" value="629361"/>
+<mapEntry key="*Fetching Data Model" value="412778"/>
 <mapEntry key="*FunctionLoader" value="106264492"/>
-<mapEntry key="*list global low level symbols" value="786504"/>
-<mapEntry key="*loading memory from target" value="4174949"/>
+<mapEntry key="*list global low level symbols" value="1341840"/>
+<mapEntry key="*loading memory from target" value="3601173"/>
 <mapEntry key="*loading values from target" value="3101648"/>
 <mapEntry key="*updating expressions" value="366335"/>
 <mapEntry key="*updating local_variables" value="902414"/>
 <mapEntry key="*updating registers" value="66275861"/>
-<mapEntry key="*updating variables" value="557965"/>
-<mapEntry key="AddEventObserver" value="4023297"/>
-<mapEntry key="Evaluate" value="4048736"/>
+<mapEntry key="*updating variables" value="522195"/>
+<mapEntry key="AddEventObserver" value="4362628"/>
+<mapEntry key="Evaluate" value="2413599"/>
 <mapEntry key="ListRegimeWarningsCommand" value="572535"/>
-<mapEntry key="Retrieving globals list" value="24134032"/>
-<mapEntry key="areCachesAvailable" value="413656"/>
+<mapEntry key="Retrieving globals list" value="23911130"/>
+<mapEntry key="areCachesAvailable" value="399075"/>
 <mapEntry key="backtrace" value="16511495"/>
-<mapEntry key="break" value="6926264"/>
-<mapEntry key="compute execution mode" value="223363"/>
-<mapEntry key="continue" value="15521135"/>
+<mapEntry key="break" value="6281900"/>
+<mapEntry key="compute execution mode" value="2178058"/>
+<mapEntry key="continue" value="15554665"/>
 <mapEntry key="core" value="9396309"/>
 <mapEntry key="disassemble" value="27010121"/>
 <mapEntry key="evaluate address" value="3847148"/>
-<mapEntry key="get byte order" value="306047"/>
-<mapEntry key="get capabilities" value="384019"/>
+<mapEntry key="get byte order" value="368865"/>
+<mapEntry key="get capabilities" value="251420"/>
 <mapEntry key="get cwd" value="162047"/>
-<mapEntry key="get execution addresss" value="158167"/>
-<mapEntry key="get source lines" value="189177"/>
-<mapEntry key="getValidEncodings" value="481099"/>
-<mapEntry key="initialize command help" value="26627265"/>
+<mapEntry key="get execution addresss" value="249158"/>
+<mapEntry key="get source lines" value="207467"/>
+<mapEntry key="getValidEncodings" value="395491"/>
+<mapEntry key="initialize command help" value="26321493"/>
 <mapEntry key="interrupt" value="321645"/>
-<mapEntry key="list breakpoint options" value="404633"/>
-<mapEntry key="list breakpoints" value="1005498"/>
-<mapEntry key="list instruction sets" value="549173"/>
-<mapEntry key="list signals" value="1063333"/>
+<mapEntry key="list breakpoint options" value="187807"/>
+<mapEntry key="list breakpoints" value="911521"/>
+<mapEntry key="list instruction sets" value="667963"/>
+<mapEntry key="list signals" value="667660"/>
 <mapEntry key="list translations" value="1485311"/>
-<mapEntry key="list watchpoint options" value="579300"/>
-<mapEntry key="list watchpoints" value="433548"/>
-<mapEntry key="loadfile" value="40476077"/>
+<mapEntry key="list watchpoint options" value="363272"/>
+<mapEntry key="list watchpoints" value="313687"/>
+<mapEntry key="loadfile" value="36510941"/>
 <mapEntry key="reload-symbol-file" value="64182088"/>
 <mapEntry key="remove" value="4245439"/>
-<mapEntry key="run script" value="151120258"/>
-<mapEntry key="set CWD" value="2382497"/>
-<mapEntry key="set breakpoint properties" value="6920181"/>
-<mapEntry key="set debug-from" value="849703"/>
-<mapEntry key="source image_import.py" value="4579764425"/>
-<mapEntry key="source use_model_semihosting.ds" value="21231407"/>
-<mapEntry key="start" value="26269958"/>
+<mapEntry key="run script" value="131417762"/>
+<mapEntry key="set CWD" value="2287886"/>
+<mapEntry key="set breakpoint properties" value="5487961"/>
+<mapEntry key="set debug-from" value="1239039"/>
+<mapEntry key="source image_import.py" value="5113566218"/>
+<mapEntry key="source use_model_semihosting.ds" value="14780398"/>
+<mapEntry key="start" value="27856286"/>
 <mapEntry key="step" value="85277838"/>
 <mapEntry key="synchronizing trace ranges" value="20340"/>
 <mapEntry key="toggleBreakpoint" value="5372006"/>
 <mapEntry key="updateBreakpointLocation" value="1672225"/>
 <mapEntry key="updating MMU tables" value="34024302"/>
-<mapEntry key="waitForTargetToStop" value="16109296"/>
+<mapEntry key="waitForTargetToStop" value="11281595"/>
 </mapAttribute>
 <intAttribute key="DEBUG_TAB..RESOURCES.COUNT" value="0"/>
 <booleanAttribute key="EVENT_VIEWER_ENABLED" value="false"/>
@@ -72,9 +72,9 @@
 <stringAttribute key="FILES.DEBUG_RESIDENT_ANDROID.RESOURCES.0.VALUE" value=""/>
 <intAttribute key="FILES.DEBUG_RESIDENT_ANDROID.RESOURCES.COUNT" value="1"/>
 <listAttribute key="FILES.DEBUG_RESIDENT_APP"/>
-<stringAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.0.TYPE" value="TARGET_WORKING_DIR"/>
+<stringAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.0.TYPE" value="APPLICATION_ON_TARGET"/>
 <stringAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.0.VALUE" value=""/>
-<stringAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.1.TYPE" value="APPLICATION_ON_TARGET"/>
+<stringAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.1.TYPE" value="TARGET_WORKING_DIR"/>
 <stringAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.1.VALUE" value=""/>
 <intAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.COUNT" value="2"/>
 <listAttribute key="FILES.DOWNLOAD_AND_DEBUG"/>
@@ -169,7 +169,15 @@
 <listEntry value="100"/>
 </listAttribute>
 <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.MemoryView.addresses">
+<listEntry value="0x1c110000"/>
 <listEntry value=""/>
+<listEntry value="0x1c110ff0"/>
+<listEntry value="0x1c11001c"/>
+<listEntry value="0x1c120fe0"/>
+<listEntry value="0x1c120000"/>
+<listEntry value="0x1c110fe0"/>
+<listEntry value="0x8016e000"/>
+<listEntry value="0x80161000"/>
 <listEntry value="0x80002c58"/>
 <listEntry value="0x000000002F000000"/>
 <listEntry value="EL3:0x27000000"/>
@@ -177,7 +185,15 @@
 <listEntry value="(gicd).GICD_CTLR"/>
 </listAttribute>
 <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.MemoryView.ranges">
+<listEntry value="1024"/>
 <listEntry value=""/>
+<listEntry value="1024"/>
+<listEntry value="1024"/>
+<listEntry value="1024"/>
+<listEntry value="1024"/>
+<listEntry value="1024"/>
+<listEntry value="1024"/>
+<listEntry value="1024"/>
 <listEntry value="1024"/>
 <listEntry value="1024"/>
 <listEntry value="1024"/>
@@ -209,8 +225,8 @@
 <stringAttribute key="debugger.view.MMUView:DebugOutlineColumnState" value="OutlineConfig1&#9;5&#9;0&#9;true&#9;false&#9;16&#9;-1&#9;true&#9;3&#9;true&#9;true&#9;108&#9;-1&#9;true&#9;5&#9;true&#9;true&#9;120&#9;-1&#9;true&#9;4&#9;true&#9;true&#9;47&#9;-1&#9;true&#9;6&#9;true&#9;true&#9;400&#9;-1&#9;true"/>
 <stringAttribute key="debugger.view.MemoryView" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;page&gt;&#10;&#9;&lt;memoryView displayWidthTag=&quot;BYTE_4&quot; numberOfColumns=&quot;0&quot; mCompressedAddresses=&quot;true&quot; formatTag=&quot;Signed Decimal&quot; showTooltipTag=&quot;true&quot; memoryByteOrder=&quot;LE&quot; autoAlign=&quot;false&quot;/&gt;&#10;&lt;/page&gt;&#10;"/>
 <listAttribute key="debugger.view.MemoryView:current">
-<listEntry value=""/>
-<listEntry value=""/>
+<listEntry value="0x1c110000"/>
+<listEntry value="1024"/>
 </listAttribute>
 <stringAttribute key="debugger.view.NewRegisterView:DebugOutlineColumnState" value="OutlineConfig1&#9;8&#9;0&#9;true&#9;true&#9;121&#9;-1&#9;true&#9;1&#9;false&#9;true&#9;127&#9;-1&#9;true&#9;2&#9;true&#9;true&#9;214&#9;-1&#9;true&#9;3&#9;false&#9;true&#9;54&#9;-1&#9;true&#9;4&#9;false&#9;true&#9;65&#9;-1&#9;true&#9;5&#9;true&#9;true&#9;48&#9;-1&#9;true&#9;6&#9;false&#9;true&#9;84&#9;-1&#9;true&#9;7&#9;true&#9;true&#9;69&#9;-1&#9;true"/>
 <stringAttribute key="debugger.view.NewRegisterView:_selectedRegisterSet" value="All registers"/>
