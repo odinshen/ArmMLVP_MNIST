@@ -1,0 +1,43 @@
+
+Conv1_O1
+
+
+Conv1_O3
+
+---------------------------------------
+Inf selected image [8] from CPU: 0
+    prob [ -16, -30, -6, -7, -18, -8, -21, -24, 17, -20,], avg/std: -13/10
+Conv_mode: 1	selected image [8] from CPU: 0, inference: 8, 		[Pass]
+		Cycle count is 7166001
+			 Cnt 0 is 0
+			 Cnt 1 is 110598
+			 Cnt 2 is 1724950
+			 Cnt 3 is 7166001
+			 Cnt 4 is 7166001
+
+
+Conv2_O3
+---------------------------------------
+Inf selected image [8] from CPU: 0
+    prob [ -16, -30, -6, -7, -18, -8, -21, -24, 17, -20,], avg/std: -13/10
+Conv_mode: 2	selected image [8] from CPU: 0, inference: 8, 		[Pass]
+		Cycle count is 3952637
+			 Cnt 0 is 0
+			 Cnt 1 is 110440
+			 Cnt 2 is 629588
+			 Cnt 3 is 3952637
+			 Cnt 4 is 3952637
+			 
+
+			 
+Conv3_O3
+---------------------------------------
+Inf selected image [8] from CPU: 0
+    prob [ -16, -30, -6, -7, -18, -8, -21, -24, 17, -20,], avg/std: -13/10
+Conv_mode: 3	selected image [8] from CPU: 0, inference: 8, 		[Pass]
+		Cycle count is 875071
+			 Cnt 0 is 0
+			 Cnt 1 is 71896
+			 Cnt 2 is 225004
+			 Cnt 3 is 875071
+			 Cnt 4 is 875071

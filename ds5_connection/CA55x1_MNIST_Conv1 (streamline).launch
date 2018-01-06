@@ -5,58 +5,58 @@
 <stringAttribute key="ANDROID_APP_DIR" value=""/>
 <stringAttribute key="ANDROID_PROCESS_NAME" value=""/>
 <mapAttribute key="AverageDurationTracker">
-<mapEntry key="*Fetching Data Model" value="671341"/>
+<mapEntry key="*Fetching Data Model" value="630688"/>
 <mapEntry key="*FunctionLoader" value="106264492"/>
-<mapEntry key="*list global low level symbols" value="2251134"/>
+<mapEntry key="*list global low level symbols" value="1620599"/>
 <mapEntry key="*loading memory from target" value="4174949"/>
 <mapEntry key="*loading values from target" value="3101648"/>
 <mapEntry key="*updating expressions" value="366335"/>
 <mapEntry key="*updating local_variables" value="902414"/>
 <mapEntry key="*updating registers" value="66275861"/>
-<mapEntry key="*updating variables" value="366476"/>
-<mapEntry key="AddEventObserver" value="3752273"/>
+<mapEntry key="*updating variables" value="468155"/>
+<mapEntry key="AddEventObserver" value="3459287"/>
 <mapEntry key="Evaluate" value="4048736"/>
 <mapEntry key="ListRegimeWarningsCommand" value="572535"/>
-<mapEntry key="Retrieving globals list" value="7154640"/>
-<mapEntry key="areCachesAvailable" value="297030"/>
+<mapEntry key="Retrieving globals list" value="5242090"/>
+<mapEntry key="areCachesAvailable" value="285749"/>
 <mapEntry key="backtrace" value="16511495"/>
-<mapEntry key="break" value="4203781"/>
-<mapEntry key="compute execution mode" value="235624"/>
-<mapEntry key="continue" value="14095461"/>
+<mapEntry key="break" value="5426045"/>
+<mapEntry key="compute execution mode" value="341117"/>
+<mapEntry key="continue" value="28800265"/>
 <mapEntry key="core" value="9396309"/>
 <mapEntry key="disassemble" value="27010121"/>
 <mapEntry key="evaluate address" value="650761"/>
 <mapEntry key="get byte order" value="306047"/>
-<mapEntry key="get capabilities" value="101582"/>
+<mapEntry key="get capabilities" value="129809"/>
 <mapEntry key="get cwd" value="162047"/>
-<mapEntry key="get execution addresss" value="141858"/>
-<mapEntry key="get source lines" value="108936"/>
-<mapEntry key="getValidEncodings" value="307461"/>
-<mapEntry key="initialize command help" value="25437854"/>
+<mapEntry key="get execution addresss" value="164791"/>
+<mapEntry key="get source lines" value="267299"/>
+<mapEntry key="getValidEncodings" value="340662"/>
+<mapEntry key="initialize command help" value="21336968"/>
 <mapEntry key="interrupt" value="438510"/>
-<mapEntry key="list breakpoint options" value="139334"/>
-<mapEntry key="list breakpoints" value="456882"/>
-<mapEntry key="list instruction sets" value="224774"/>
-<mapEntry key="list signals" value="1608136"/>
+<mapEntry key="list breakpoint options" value="100218"/>
+<mapEntry key="list breakpoints" value="300250"/>
+<mapEntry key="list instruction sets" value="288804"/>
+<mapEntry key="list signals" value="1341163"/>
 <mapEntry key="list translations" value="1485311"/>
-<mapEntry key="list watchpoint options" value="211544"/>
-<mapEntry key="list watchpoints" value="252171"/>
-<mapEntry key="loadfile" value="28528989"/>
+<mapEntry key="list watchpoint options" value="474191"/>
+<mapEntry key="list watchpoints" value="234269"/>
+<mapEntry key="loadfile" value="24729660"/>
 <mapEntry key="reload-symbol-file" value="64182088"/>
 <mapEntry key="remove" value="4245439"/>
-<mapEntry key="run script" value="47601714"/>
-<mapEntry key="set CWD" value="1810002"/>
-<mapEntry key="set breakpoint properties" value="5312530"/>
-<mapEntry key="set debug-from" value="603974"/>
-<mapEntry key="source image_import.py" value="3932101453"/>
-<mapEntry key="source use_model_semihosting.ds" value="11307865"/>
-<mapEntry key="start" value="12067921"/>
+<mapEntry key="run script" value="47487644"/>
+<mapEntry key="set CWD" value="2520834"/>
+<mapEntry key="set breakpoint properties" value="4755518"/>
+<mapEntry key="set debug-from" value="421303"/>
+<mapEntry key="source image_import.py" value="3705359356"/>
+<mapEntry key="source use_model_semihosting.ds" value="9989451"/>
+<mapEntry key="start" value="15598897"/>
 <mapEntry key="step" value="85277838"/>
 <mapEntry key="synchronizing trace ranges" value="20340"/>
 <mapEntry key="toggleBreakpoint" value="5372006"/>
 <mapEntry key="updateBreakpointLocation" value="1672225"/>
 <mapEntry key="updating MMU tables" value="34024302"/>
-<mapEntry key="waitForTargetToStop" value="5706547"/>
+<mapEntry key="waitForTargetToStop" value="6225806"/>
 </mapAttribute>
 <intAttribute key="DEBUG_TAB..RESOURCES.COUNT" value="0"/>
 <booleanAttribute key="EVENT_VIEWER_ENABLED" value="false"/>
@@ -152,8 +152,8 @@
 <stringAttribute key="breakpoints" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;breakpoints&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;RAW_EXEC_ADDRESS&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; address=&quot;EL1N:0x0000000000004A00&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; address=&quot;EL1N:0x0000000000004A00&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&lt;/breakpoints&gt;&#10;"/>
 <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.DisassemblyView.addresses">
 <listEntry value=""/>
-<listEntry value="&lt;Next Instruction&gt;"/>
 <listEntry value="$pc"/>
+<listEntry value="&lt;Next Instruction&gt;"/>
 <listEntry value="convolution"/>
 <listEntry value="0X0000000000004ad0"/>
 <listEntry value="0x4a00"/>
@@ -170,9 +170,6 @@
 </listAttribute>
 <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.MemoryView.addresses">
 <listEntry value=""/>
-<listEntry value="0x8016e000"/>
-<listEntry value="0x80160000"/>
-<listEntry value="0x80161000"/>
 <listEntry value="0x80002c58"/>
 <listEntry value="0x000000002F000000"/>
 <listEntry value="EL3:0x27000000"/>
@@ -181,9 +178,6 @@
 </listAttribute>
 <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.MemoryView.ranges">
 <listEntry value=""/>
-<listEntry value="1024"/>
-<listEntry value="1024"/>
-<listEntry value="1024"/>
 <listEntry value="1024"/>
 <listEntry value="1024"/>
 <listEntry value="1024"/>

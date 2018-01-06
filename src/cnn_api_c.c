@@ -133,6 +133,8 @@ int convolution_filter3(
         for (current_filter_col = 0; current_filter_col < con_filter_filter_cols; current_filter_col++) {
         	*CONV3_Eng_X = stride_row;
         	*CONV3_Eng_Y = stride_col;
+        	kernel_result = stride_row * stride_col;
+        	*CONV3_Eng_Z = kernel_result;
         	kernel_result = *CONV3_Eng_Z;
         }
     }
