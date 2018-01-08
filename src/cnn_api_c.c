@@ -28,6 +28,7 @@ static float *con_filter_biases = 0;
 static char  con_filter_relu_activation = 0;
 #endif
 
+
 float relu(float value) {
     if (value < 0.0f) {
         return 0.0f;
@@ -110,6 +111,73 @@ int convolution_filter2(
 
     return 0;
 }
+
+int convolution_conv2(
+    layer_structure *lay,
+    float *inputs,
+    float *outputs,
+    float *weights,
+    float *biases
+) {
+    unsigned int out_ch;
+    unsigned int in_ch;
+    unsigned int stride_row;
+    unsigned int stride_col;
+    unsigned int filter_row;
+    unsigned int filter_col;
+    float current_weight;
+    float current_biase;
+    float current_input;
+    float current_result;
+    float kernel_result;
+
+    for (stride_row = 0; stride_row < lay->output_rows; stride_row++) {
+        for (stride_col = 0; stride_col < lay->output_columns; stride_col++) {
+            for (out_ch = 0; out_ch < lay->output_channel; out_ch++) {
+                ((float*)outputs)[((stride_row * lay->output_columns * lay->output_channel)
+                                                +(stride_col * lay->output_channel)
+                                                + out_ch)]
+                = 0.0f;
+            }
+        }
+    }
+
+    for (stride_row = 0; stride_row < lay->output_rows; stride_row++) {
+        for (stride_col = 0; stride_col < lay->output_columns; stride_col++) {
+
+        	//	*inputs
+        	//	*outputs
+        	//	input_channel
+        	//  intput_columns
+        	//	output_channel
+        	//  output_columns
+        	//	filter_rows
+        	//	filter_cols
+        	//	stride_row
+        	//	stride_col
+        	//	*weights,
+        	//	*biases,
+        	convolution_filter2(
+    			(float*)inputs,
+    			(float*)outputs,
+				lay->input_channel,
+				lay->input_columns,
+				lay->output_channel,
+				lay->output_columns,
+        		lay->filter_rows,
+				lay->filter_columns,
+				stride_row,
+				stride_col,
+				(float*)weights,
+				(float*)biases,
+				lay->relu_activation
+        	);
+        }
+    }
+
+    return 0;
+}
+
 #endif
 
 #ifdef CNN_CONV_3
@@ -186,73 +254,6 @@ int convolution_filter3(
     return 0;
 #endif
 }
-#endif
-
-int convolution_conv2(
-    layer_structure *lay,
-    float *inputs,
-    float *outputs,
-    float *weights,
-    float *biases
-) {
-    unsigned int out_ch;
-    unsigned int in_ch;
-    unsigned int stride_row;
-    unsigned int stride_col;
-    unsigned int filter_row;
-    unsigned int filter_col;
-    float current_weight;
-    float current_biase;
-    float current_input;
-    float current_result;
-    float kernel_result;
-
-    for (stride_row = 0; stride_row < lay->output_rows; stride_row++) {
-        for (stride_col = 0; stride_col < lay->output_columns; stride_col++) {
-            for (out_ch = 0; out_ch < lay->output_channel; out_ch++) {
-                ((float*)outputs)[((stride_row * lay->output_columns * lay->output_channel)
-                                                +(stride_col * lay->output_channel)
-                                                + out_ch)]
-                = 0.0f;
-            }
-        }
-    }
-
-    for (stride_row = 0; stride_row < lay->output_rows; stride_row++) {
-        for (stride_col = 0; stride_col < lay->output_columns; stride_col++) {
-
-        	//	*inputs
-        	//	*outputs
-        	//	input_channel
-        	//  intput_columns
-        	//	output_channel
-        	//  output_columns
-        	//	filter_rows
-        	//	filter_cols
-        	//	stride_row
-        	//	stride_col
-        	//	*weights,
-        	//	*biases,
-        	convolution_filter2(
-    			(float*)inputs,
-    			(float*)outputs,
-				lay->input_channel,
-				lay->input_columns,
-				lay->output_channel,
-				lay->output_columns,
-        		lay->filter_rows,
-				lay->filter_columns,
-				stride_row,
-				stride_col,
-				(float*)weights,
-				(float*)biases,
-				lay->relu_activation
-        	);
-        }
-    }
-
-    return 0;
-}
 
 int convolution_conv3(
     layer_structure *lay,
@@ -317,6 +318,9 @@ int convolution_conv3(
 
     return 0;
 }
+
+#endif
+
 
 int convolution(
     layer_structure *lay,

@@ -192,7 +192,7 @@ __attribute__((noreturn)) void MainApp(void)
     	else {
     		printf("[Pass]\n");
     	}
-        printf("\t\tCycle count is %llu\n", pmu_cycle_counter_get_count());
+        printf("\t\tInstr count is %llu\n", pmu_cycle_counter_get_count());
         printf("\t\t\t Cnt 0 is %u\n", pmu_counter_get_event_count(0));
         printf("\t\t\t Cnt 1 is %u\n", pmu_counter_get_event_count(1));
         printf("\t\t\t Cnt 2 is %u\n", pmu_counter_get_event_count(2));
