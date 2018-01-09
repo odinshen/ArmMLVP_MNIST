@@ -274,7 +274,6 @@ int convolution_conv3(
     float current_result;
     float kernel_result;
 
-#ifdef CNN_CONV_3
     con_filter_inputs  = (float*)inputs;
     con_filter_outputs  = (float*)outputs;
     con_filter_input_channel = lay->input_channel;
@@ -286,7 +285,6 @@ int convolution_conv3(
     con_filter_weights = (float*)weights;
     con_filter_biases = (float*)biases;
     con_filter_relu_activation = lay->relu_activation;
-#endif
 
 /*
     for (stride_row = 0; stride_row < lay->output_rows; stride_row++) {
@@ -304,15 +302,12 @@ int convolution_conv3(
     for (stride_row = 0; stride_row < lay->output_rows; stride_row++) {
         for (stride_col = 0; stride_col < lay->output_columns; stride_col++) {
 
-#ifdef CNN_CONV_3
         	//	stride_row
         	//	stride_col
         	convolution_filter3(
 				stride_row,
 				stride_col
         	);
-#endif
-
         }
     }
 

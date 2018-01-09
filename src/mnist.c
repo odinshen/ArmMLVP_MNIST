@@ -49,6 +49,7 @@ int mnist_cnn_eval(
     lay.output_rows = 24;
     lay.output_columns = 24;
     lay.relu_activation = 1;    // Activation:ReLU
+#ifdef CNN_CONV_2
     if (conv_mode == 2) {
     	convolution_conv2(
     			&lay,
@@ -57,9 +58,10 @@ int mnist_cnn_eval(
 				(float*)KERASLAYER0_WEIGHTS,
 				(float*)KERASLAYER0_BIASES
     	);
-    }
+    } else
+#endif
 #ifdef CNN_CONV_3
-    else if (conv_mode == 3) {
+    if (conv_mode == 3) {
     	convolution_conv3(
     			&lay,
 				(float*)workspace_inout,
@@ -67,9 +69,9 @@ int mnist_cnn_eval(
 				(float*)KERASLAYER0_WEIGHTS,
 				(float*)KERASLAYER0_BIASES
     	);
-    }
+    } else
 #endif
-    else {
+    {
     	convolution(
     			&lay,
 				(float*)workspace_inout,
@@ -105,6 +107,7 @@ int mnist_cnn_eval(
     lay.output_rows = 8;
     lay.output_columns = 8;
     lay.relu_activation = 1;    // Activation:ReLU
+#ifdef CNN_CONV_2
     if (conv_mode == 2) {
     	convolution_conv2(
     			&lay,
@@ -113,9 +116,10 @@ int mnist_cnn_eval(
 				(float*)KERASLAYER2_WEIGHTS,
 				(float*)KERASLAYER2_BIASES
     	);
-    }
+    } else
+#endif
 #ifdef CNN_CONV_3
-    else if (conv_mode == 3) {
+    if (conv_mode == 3) {
     	convolution_conv3(
     			&lay,
 				(float*)workspace_layer2,
@@ -123,9 +127,9 @@ int mnist_cnn_eval(
 				(float*)KERASLAYER2_WEIGHTS,
 				(float*)KERASLAYER2_BIASES
     	);
-    }
+    } else
 #endif
-    else {
+    {
     	convolution(
     			&lay,
 				(float*)workspace_layer2,
