@@ -316,7 +316,7 @@ int convolution_conv3(
 
 #endif
 
-
+#ifdef CNN_CONV_1
 int convolution(
     layer_structure *lay,
     float *inputs,
@@ -564,3 +564,4 @@ int post_proc(
 
     return idx_max;
 }
+#endif

@@ -17,7 +17,7 @@ int mnist_cnn_eval(
     unsigned int *result
 ) {
     static layer_structure lay;
-
+#ifdef CNN_CONV_1
     unsigned int conv_mode;
 
 //    unsigned int workspace_inout = MNIST_TEST_BASE + MNIST_WORKSPACE_BASE + 0x18000 * idx;
@@ -198,8 +198,8 @@ int mnist_cnn_eval(
     );
 
     *result = post_proc((float*)workspace_output, lay.output_channel);
-
 	printf("Conv_mode: %d", conv_mode);
+#endif
 
     return 0;
 }
