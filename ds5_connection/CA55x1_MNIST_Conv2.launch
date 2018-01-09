@@ -5,60 +5,60 @@
 <stringAttribute key="ANDROID_APP_DIR" value=""/>
 <stringAttribute key="ANDROID_PROCESS_NAME" value=""/>
 <mapAttribute key="AverageDurationTracker">
-<mapEntry key="*Fetching Data Model" value="406846"/>
+<mapEntry key="*Fetching Data Model" value="1383589"/>
 <mapEntry key="*FunctionLoader" value="106264492"/>
-<mapEntry key="*list global low level symbols" value="1342886"/>
+<mapEntry key="*list global low level symbols" value="6097984"/>
 <mapEntry key="*loading memory from target" value="3625289"/>
 <mapEntry key="*loading values from target" value="7045950"/>
 <mapEntry key="*updating expressions" value="366335"/>
 <mapEntry key="*updating local_variables" value="902414"/>
 <mapEntry key="*updating registers" value="66275861"/>
-<mapEntry key="*updating variables" value="424237"/>
-<mapEntry key="AddEventObserver" value="5104990"/>
+<mapEntry key="*updating variables" value="543059"/>
+<mapEntry key="AddEventObserver" value="6378590"/>
 <mapEntry key="Evaluate" value="1347161"/>
 <mapEntry key="ListRegimeWarningsCommand" value="572535"/>
-<mapEntry key="Retrieving globals list" value="9086406"/>
+<mapEntry key="Retrieving globals list" value="12399720"/>
 <mapEntry key="areCachesAvailable" value="1031298"/>
 <mapEntry key="backtrace" value="16511495"/>
-<mapEntry key="break" value="9996169"/>
-<mapEntry key="compute execution mode" value="458485"/>
+<mapEntry key="break" value="19522900"/>
+<mapEntry key="compute execution mode" value="1113720"/>
 <mapEntry key="console" value="21966962"/>
 <mapEntry key="console help" value="507590"/>
-<mapEntry key="continue" value="20176768"/>
+<mapEntry key="continue" value="16063362"/>
 <mapEntry key="core" value="9396309"/>
 <mapEntry key="disassemble" value="27010121"/>
 <mapEntry key="evaluate address" value="443562"/>
 <mapEntry key="get byte order" value="961898"/>
-<mapEntry key="get capabilities" value="1241465"/>
+<mapEntry key="get capabilities" value="694268"/>
 <mapEntry key="get cwd" value="162047"/>
-<mapEntry key="get execution addresss" value="331257"/>
-<mapEntry key="get source lines" value="297580"/>
+<mapEntry key="get execution addresss" value="192044"/>
+<mapEntry key="get source lines" value="256289"/>
 <mapEntry key="getValidEncodings" value="726668"/>
-<mapEntry key="initialize command help" value="34547043"/>
+<mapEntry key="initialize command help" value="34203938"/>
 <mapEntry key="interrupt" value="440255"/>
-<mapEntry key="list breakpoint options" value="202325"/>
-<mapEntry key="list breakpoints" value="1480595"/>
-<mapEntry key="list instruction sets" value="531477"/>
-<mapEntry key="list signals" value="5580984"/>
+<mapEntry key="list breakpoint options" value="223051"/>
+<mapEntry key="list breakpoints" value="1326646"/>
+<mapEntry key="list instruction sets" value="1901680"/>
+<mapEntry key="list signals" value="3854093"/>
 <mapEntry key="list translations" value="1485311"/>
-<mapEntry key="list watchpoint options" value="1322965"/>
-<mapEntry key="list watchpoints" value="479867"/>
-<mapEntry key="loadfile" value="52292299"/>
+<mapEntry key="list watchpoint options" value="3412121"/>
+<mapEntry key="list watchpoints" value="7392687"/>
+<mapEntry key="loadfile" value="71079571"/>
 <mapEntry key="reload-symbol-file" value="64182088"/>
 <mapEntry key="remove" value="3674117"/>
-<mapEntry key="run script" value="91548819"/>
-<mapEntry key="set CWD" value="3269605"/>
-<mapEntry key="set breakpoint properties" value="6287328"/>
-<mapEntry key="set debug-from" value="730873"/>
-<mapEntry key="source image_import.py" value="4754184312"/>
-<mapEntry key="source use_model_semihosting.ds" value="16064645"/>
-<mapEntry key="start" value="31955186"/>
+<mapEntry key="run script" value="108023627"/>
+<mapEntry key="set CWD" value="4043855"/>
+<mapEntry key="set breakpoint properties" value="10256918"/>
+<mapEntry key="set debug-from" value="1014670"/>
+<mapEntry key="source image_import.py" value="3852584611"/>
+<mapEntry key="source use_model_semihosting.ds" value="20784089"/>
+<mapEntry key="start" value="97607299"/>
 <mapEntry key="step" value="85277838"/>
 <mapEntry key="synchronizing trace ranges" value="20340"/>
 <mapEntry key="toggleBreakpoint" value="9207267"/>
 <mapEntry key="updateBreakpointLocation" value="2905236"/>
 <mapEntry key="updating MMU tables" value="34024302"/>
-<mapEntry key="waitForTargetToStop" value="12073643"/>
+<mapEntry key="waitForTargetToStop" value="23927447"/>
 <mapEntry key="write memory" value="8839810"/>
 </mapAttribute>
 <intAttribute key="DEBUG_TAB..RESOURCES.COUNT" value="0"/>
@@ -83,7 +83,7 @@
 <listAttribute key="FILES.DOWNLOAD_AND_DEBUG"/>
 <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.OPTION.ALSO_LOAD_SYMBOLS" value="false"/>
 <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.OPTION.ON_DEMAND_LOAD" value="true"/>
-<stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.TYPE" value="TARGET_DOWNLOAD_DIR"/>
+<stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.TYPE" value="TARGET_WORKING_DIR"/>
 <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.VALUE" value=""/>
 <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.OPTION.ALSO_LOAD_SYMBOLS" value="false"/>
 <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.OPTION.ON_DEMAND_LOAD" value="true"/>
@@ -91,13 +91,13 @@
 <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.VALUE" value=""/>
 <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.OPTION.ALSO_LOAD_SYMBOLS" value="false"/>
 <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.OPTION.ON_DEMAND_LOAD" value="true"/>
-<stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.TYPE" value="TARGET_WORKING_DIR"/>
+<stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.TYPE" value="TARGET_DOWNLOAD_DIR"/>
 <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.VALUE" value=""/>
 <intAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.COUNT" value="3"/>
 <listAttribute key="FILES.DOWNLOAD_DEBUG"/>
 <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.OPTION.ALSO_LOAD_SYMBOLS" value="false"/>
 <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.OPTION.ON_DEMAND_LOAD" value="true"/>
-<stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.TYPE" value="TARGET_DOWNLOAD_DIR"/>
+<stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.TYPE" value="TARGET_WORKING_DIR"/>
 <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.VALUE" value=""/>
 <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.OPTION.ALSO_LOAD_SYMBOLS" value="false"/>
 <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.OPTION.ON_DEMAND_LOAD" value="true"/>
@@ -105,7 +105,7 @@
 <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.VALUE" value=""/>
 <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.OPTION.ALSO_LOAD_SYMBOLS" value="false"/>
 <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.OPTION.ON_DEMAND_LOAD" value="true"/>
-<stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.TYPE" value="TARGET_WORKING_DIR"/>
+<stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.TYPE" value="TARGET_DOWNLOAD_DIR"/>
 <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.VALUE" value=""/>
 <intAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.COUNT" value="3"/>
 <intAttribute key="FILES.DOWNLOAD_DEBUG_ANDROID.RESOURCES.COUNT" value="0"/>
@@ -152,7 +152,7 @@
 <booleanAttribute key="VFS_ENABLED" value="true"/>
 <stringAttribute key="VFS_LOCAL_DIR" value="${workspace_loc}"/>
 <stringAttribute key="VFS_REMOTE_MOUNT" value="/writeable"/>
-<stringAttribute key="breakpoints" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;breakpoints&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;RAW_EXEC_ADDRESS&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; address=&quot;EL1N:0x0000000000004A00&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; address=&quot;EL1N:0x0000000000004A00&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;SOURCEPOSITION&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; address=&quot;EL3:0x0000000080005434&quot; debugFile=&quot;C:/Git/ArmVirtualPlatformCNN/ArmMLVP_MNIST/src/cnn_api_c.c&quot; hostFile=&quot;C:\Git\ArmVirtualPlatformCNN\ArmMLVP_MNIST\src\cnn_api_c.c&quot; line=&quot;233&quot; function=&quot;convolution_conv2&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; address=&quot;EL3:0x0000000080005458&quot; debugFile=&quot;C:/Git/ArmVirtualPlatformCNN/ArmMLVP_MNIST/src/cnn_api_c.c&quot; hostFile=&quot;C:\Git\ArmVirtualPlatformCNN\ArmMLVP_MNIST\src\cnn_api_c.c&quot; line=&quot;264&quot; function=&quot;convolution_conv3&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;1&quot; enabled=&quot;true&quot; version=&quot;2&quot; address=&quot;EL1N:0x0000000080005458&quot; debugFile=&quot;C:/Git/ArmVirtualPlatformCNN/ArmMLVP_MNIST/src/cnn_api_c.c&quot; hostFile=&quot;C:\Git\ArmVirtualPlatformCNN\ArmMLVP_MNIST\src\cnn_api_c.c&quot; line=&quot;264&quot; function=&quot;convolution_conv3&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&lt;/breakpoints&gt;&#10;"/>
+<stringAttribute key="breakpoints" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;breakpoints&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;RAW_EXEC_ADDRESS&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; address=&quot;EL1N:0x0000000000004A00&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; address=&quot;EL1N:0x0000000000004A00&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;SOURCEPOSITION&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; address=&quot;EL3:0x0000000080005434&quot; debugFile=&quot;C:/Git/ArmVirtualPlatformCNN/ArmMLVP_MNIST/src/cnn_api_c.c&quot; hostFile=&quot;C:\Git\ArmVirtualPlatformCNN\ArmMLVP_MNIST\src\cnn_api_c.c&quot; line=&quot;233&quot; function=&quot;convolution_conv2&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; address=&quot;EL3:0x0000000080005474&quot; debugFile=&quot;C:/Git/ArmVirtualPlatformCNN/ArmMLVP_MNIST/src/cnn_api_c.c&quot; hostFile=&quot;C:\Git\ArmVirtualPlatformCNN\ArmMLVP_MNIST\src\cnn_api_c.c&quot; line=&quot;264&quot; function=&quot;convolution_conv3&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;1&quot; enabled=&quot;true&quot; version=&quot;2&quot; address=&quot;EL1N:0x0000000080005474&quot; debugFile=&quot;C:/Git/ArmVirtualPlatformCNN/ArmMLVP_MNIST/src/cnn_api_c.c&quot; hostFile=&quot;C:\Git\ArmVirtualPlatformCNN\ArmMLVP_MNIST\src\cnn_api_c.c&quot; line=&quot;264&quot; function=&quot;convolution_conv3&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&lt;/breakpoints&gt;&#10;"/>
 <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.DisassemblyView.addresses">
 <listEntry value=""/>
 <listEntry value="$pc"/>

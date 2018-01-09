@@ -5,58 +5,61 @@
 <stringAttribute key="ANDROID_APP_DIR" value=""/>
 <stringAttribute key="ANDROID_PROCESS_NAME" value=""/>
 <mapAttribute key="AverageDurationTracker">
-<mapEntry key="*Fetching Data Model" value="240238"/>
+<mapEntry key="*Fetching Data Model" value="1864979"/>
 <mapEntry key="*FunctionLoader" value="106264492"/>
-<mapEntry key="*list global low level symbols" value="2542480"/>
-<mapEntry key="*loading memory from target" value="4174949"/>
-<mapEntry key="*loading values from target" value="3101648"/>
+<mapEntry key="*list global low level symbols" value="1191276"/>
+<mapEntry key="*loading memory from target" value="3625289"/>
+<mapEntry key="*loading values from target" value="7045950"/>
 <mapEntry key="*updating expressions" value="366335"/>
 <mapEntry key="*updating local_variables" value="902414"/>
 <mapEntry key="*updating registers" value="66275861"/>
-<mapEntry key="*updating variables" value="451224"/>
-<mapEntry key="AddEventObserver" value="3986856"/>
-<mapEntry key="Evaluate" value="4048736"/>
+<mapEntry key="*updating variables" value="660064"/>
+<mapEntry key="AddEventObserver" value="10679048"/>
+<mapEntry key="Evaluate" value="1347161"/>
 <mapEntry key="ListRegimeWarningsCommand" value="572535"/>
-<mapEntry key="Retrieving globals list" value="8112470"/>
-<mapEntry key="areCachesAvailable" value="383889"/>
+<mapEntry key="Retrieving globals list" value="10195481"/>
+<mapEntry key="areCachesAvailable" value="1031298"/>
 <mapEntry key="backtrace" value="16511495"/>
-<mapEntry key="break" value="6499344"/>
-<mapEntry key="compute execution mode" value="410278"/>
-<mapEntry key="continue" value="14027196"/>
+<mapEntry key="break" value="6050207"/>
+<mapEntry key="compute execution mode" value="251634"/>
+<mapEntry key="console" value="21966962"/>
+<mapEntry key="console help" value="507590"/>
+<mapEntry key="continue" value="14277732"/>
 <mapEntry key="core" value="9396309"/>
 <mapEntry key="disassemble" value="27010121"/>
-<mapEntry key="evaluate address" value="636532"/>
-<mapEntry key="get byte order" value="306047"/>
-<mapEntry key="get capabilities" value="119183"/>
+<mapEntry key="evaluate address" value="443562"/>
+<mapEntry key="get byte order" value="961898"/>
+<mapEntry key="get capabilities" value="205408"/>
 <mapEntry key="get cwd" value="162047"/>
-<mapEntry key="get execution addresss" value="178658"/>
-<mapEntry key="get source lines" value="158684"/>
-<mapEntry key="getValidEncodings" value="326732"/>
-<mapEntry key="initialize command help" value="24479699"/>
-<mapEntry key="interrupt" value="446808"/>
-<mapEntry key="list breakpoint options" value="1523989"/>
-<mapEntry key="list breakpoints" value="333397"/>
-<mapEntry key="list instruction sets" value="216257"/>
-<mapEntry key="list signals" value="719047"/>
+<mapEntry key="get execution addresss" value="160988"/>
+<mapEntry key="get source lines" value="134323"/>
+<mapEntry key="getValidEncodings" value="726668"/>
+<mapEntry key="initialize command help" value="24140344"/>
+<mapEntry key="interrupt" value="440255"/>
+<mapEntry key="list breakpoint options" value="173983"/>
+<mapEntry key="list breakpoints" value="620098"/>
+<mapEntry key="list instruction sets" value="1224407"/>
+<mapEntry key="list signals" value="782813"/>
 <mapEntry key="list translations" value="1485311"/>
-<mapEntry key="list watchpoint options" value="240878"/>
-<mapEntry key="list watchpoints" value="230844"/>
-<mapEntry key="loadfile" value="26295626"/>
+<mapEntry key="list watchpoint options" value="609880"/>
+<mapEntry key="list watchpoints" value="1339568"/>
+<mapEntry key="loadfile" value="32316633"/>
 <mapEntry key="reload-symbol-file" value="64182088"/>
-<mapEntry key="remove" value="4245439"/>
-<mapEntry key="run script" value="87252347"/>
-<mapEntry key="set CWD" value="1694269"/>
-<mapEntry key="set breakpoint properties" value="4490359"/>
-<mapEntry key="set debug-from" value="778706"/>
-<mapEntry key="source image_import.py" value="4409712870"/>
-<mapEntry key="source use_model_semihosting.ds" value="9899058"/>
-<mapEntry key="start" value="21363836"/>
+<mapEntry key="remove" value="3674117"/>
+<mapEntry key="run script" value="60724224"/>
+<mapEntry key="set CWD" value="2277648"/>
+<mapEntry key="set breakpoint properties" value="6654461"/>
+<mapEntry key="set debug-from" value="828071"/>
+<mapEntry key="source image_import.py" value="3885924994"/>
+<mapEntry key="source use_model_semihosting.ds" value="9299172"/>
+<mapEntry key="start" value="22184188"/>
 <mapEntry key="step" value="85277838"/>
 <mapEntry key="synchronizing trace ranges" value="20340"/>
-<mapEntry key="toggleBreakpoint" value="5372006"/>
-<mapEntry key="updateBreakpointLocation" value="1672225"/>
+<mapEntry key="toggleBreakpoint" value="9207267"/>
+<mapEntry key="updateBreakpointLocation" value="2905236"/>
 <mapEntry key="updating MMU tables" value="34024302"/>
-<mapEntry key="waitForTargetToStop" value="3154326"/>
+<mapEntry key="waitForTargetToStop" value="11351999"/>
+<mapEntry key="write memory" value="8839810"/>
 </mapAttribute>
 <intAttribute key="DEBUG_TAB..RESOURCES.COUNT" value="0"/>
 <booleanAttribute key="EVENT_VIEWER_ENABLED" value="false"/>
@@ -149,7 +152,7 @@
 <booleanAttribute key="VFS_ENABLED" value="true"/>
 <stringAttribute key="VFS_LOCAL_DIR" value="${workspace_loc}"/>
 <stringAttribute key="VFS_REMOTE_MOUNT" value="/writeable"/>
-<stringAttribute key="breakpoints" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;breakpoints&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;RAW_EXEC_ADDRESS&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; address=&quot;EL1N:0x0000000000004A00&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; address=&quot;EL1N:0x0000000000004A00&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&lt;/breakpoints&gt;&#10;"/>
+<stringAttribute key="breakpoints" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;breakpoints&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;RAW_EXEC_ADDRESS&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; address=&quot;EL1N:0x0000000000004A00&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; address=&quot;EL1N:0x0000000000004A00&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;SOURCEPOSITION&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; address=&quot;EL3:0x0000000080005434&quot; debugFile=&quot;C:/Git/ArmVirtualPlatformCNN/ArmMLVP_MNIST/src/cnn_api_c.c&quot; hostFile=&quot;C:\Git\ArmVirtualPlatformCNN\ArmMLVP_MNIST\src\cnn_api_c.c&quot; line=&quot;233&quot; function=&quot;convolution_conv2&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; address=&quot;EL3:0x0000000080005474&quot; debugFile=&quot;C:/Git/ArmVirtualPlatformCNN/ArmMLVP_MNIST/src/cnn_api_c.c&quot; hostFile=&quot;C:\Git\ArmVirtualPlatformCNN\ArmMLVP_MNIST\src\cnn_api_c.c&quot; line=&quot;264&quot; function=&quot;convolution_conv3&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;1&quot; enabled=&quot;true&quot; version=&quot;2&quot; address=&quot;EL1N:0x0000000080005474&quot; debugFile=&quot;C:/Git/ArmVirtualPlatformCNN/ArmMLVP_MNIST/src/cnn_api_c.c&quot; hostFile=&quot;C:\Git\ArmVirtualPlatformCNN\ArmMLVP_MNIST\src\cnn_api_c.c&quot; line=&quot;264&quot; function=&quot;convolution_conv3&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&lt;/breakpoints&gt;&#10;"/>
 <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.DisassemblyView.addresses">
 <listEntry value=""/>
 <listEntry value="$pc"/>
@@ -184,19 +187,20 @@
 <listEntry value="1024"/>
 <listEntry value="1024"/>
 </listAttribute>
+<stringAttribute key="com.arm.debug.views.debugConsole.DebugCommandLine.History" value="store;help;help memory;help file;help save;help;help group_files;help dump;dump memory layer1_image8.bin 0x80161000 0x8016AFFF;dump memory layer3_image8.bin 0x8016E000 0x8106FFFF;dump memory layer3_image8.bin 0x8016E000 0x8016FFFF;dump memory layer1_image8.bin 0x80161000 0x8016AFFF;dump memory layer3_image8.bin 0x8016E000 0x8016FFFF"/>
 <listAttribute key="com.arm.debugger.views.common.AddressTracker.debugger.view.DisassemblyView.addresses">
 <listEntry value="&lt;Next Instruction&gt;"/>
 </listAttribute>
 <listAttribute key="com.arm.debugger.views.common.AddressTracker.debugger.view.DisassemblyView.ranges">
 <listEntry value="100"/>
 </listAttribute>
-<stringAttribute key="config_db_activity_name" value="Debug Cortex-A55"/>
+<stringAttribute key="config_db_activity_name" value="Debug ARMAEMv8-A"/>
 <stringAttribute key="config_db_connection_keys" value="dtsl_config dtsl_tracecapture_option dtsl_config_script model_params config_file setup TCP_KILL_ON_EXIT TCP_DISABLE_EXTENDED_MODE"/>
 <stringAttribute key="config_db_connection_type" value="Bare Metal Debug"/>
-<stringAttribute key="config_db_platform_name" value="ARM FVP (Installed with DS-5) - Base_A55x1"/>
+<stringAttribute key="config_db_platform_name" value="ARM FVP (Installed with DS-5) - Base_AEMv8Ax1"/>
 <stringAttribute key="config_db_project_type" value="Bare Metal Debug"/>
 <stringAttribute key="config_db_project_type_id" value="BARE_METAL"/>
-<stringAttribute key="config_db_taxonomy_id" value="/platform/armfvp_installedwithds_5_/base_a55x1"/>
+<stringAttribute key="config_db_taxonomy_id" value="/platform/armfvp_installedwithds_5_/base_aemv8ax1"/>
 <stringAttribute key="config_file" value="CDB://cadi_config.xml"/>
 <booleanAttribute key="connectOnly" value="false"/>
 <listAttribute key="debugger.view.DisassemblyView:current">
@@ -207,7 +211,7 @@
 <mapAttribute key="debugger.view.ExpressionsView.ExpressionsData"/>
 <stringAttribute key="debugger.view.ExpressionsView:DebugOutlineColumnState" value="OutlineConfig1&#9;8&#9;0&#9;true&#9;false&#9;695&#9;-1&#9;true&#9;1&#9;false&#9;true&#9;127&#9;-1&#9;true&#9;2&#9;true&#9;false&#9;232&#9;-1&#9;true&#9;3&#9;true&#9;true&#9;54&#9;-1&#9;true&#9;4&#9;true&#9;true&#9;65&#9;-1&#9;true&#9;5&#9;true&#9;true&#9;48&#9;-1&#9;true&#9;6&#9;true&#9;true&#9;84&#9;-1&#9;true&#9;7&#9;true&#9;true&#9;69&#9;-1&#9;true"/>
 <stringAttribute key="debugger.view.MMUView:DebugOutlineColumnState" value="OutlineConfig1&#9;5&#9;0&#9;true&#9;false&#9;16&#9;-1&#9;true&#9;3&#9;true&#9;true&#9;108&#9;-1&#9;true&#9;5&#9;true&#9;true&#9;120&#9;-1&#9;true&#9;4&#9;true&#9;true&#9;47&#9;-1&#9;true&#9;6&#9;true&#9;true&#9;400&#9;-1&#9;true"/>
-<stringAttribute key="debugger.view.MemoryView" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;page&gt;&#10;&#9;&lt;memoryView displayWidthTag=&quot;BYTE_4&quot; numberOfColumns=&quot;0&quot; mCompressedAddresses=&quot;true&quot; formatTag=&quot;Signed Decimal&quot; showTooltipTag=&quot;true&quot; memoryByteOrder=&quot;LE&quot; autoAlign=&quot;false&quot;/&gt;&#10;&lt;/page&gt;&#10;"/>
+<stringAttribute key="debugger.view.MemoryView" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;page&gt;&#10;&#9;&lt;memoryView displayWidthTag=&quot;BYTE_4&quot; numberOfColumns=&quot;0&quot; mCompressedAddresses=&quot;true&quot; formatTag=&quot;Hexadecimal&quot; showTooltipTag=&quot;true&quot; memoryByteOrder=&quot;LE&quot; autoAlign=&quot;false&quot;/&gt;&#10;&lt;/page&gt;&#10;"/>
 <listAttribute key="debugger.view.MemoryView:current">
 <listEntry value=""/>
 <listEntry value=""/>
@@ -229,7 +233,7 @@
 <stringAttribute key="dtsl_options_file" value="default"/>
 <stringAttribute key="dtsl_tracecapture_option" value="options.traceBuffer.traceCaptureDevice"/>
 <booleanAttribute key="linuxOS" value="false"/>
-<stringAttribute key="model_params" value="-C bp.secure_memory=false -C cache_state_modelled=1 -a cluster0.cpu0=&quot;C:\Git\ArmVirtualPlatformCNN\ArmMLVP_MNIST\ArmMLVP_MNIST.axf&quot; --plugin st=&quot;C:\Program Files\DS-5 v5.28.0\sw\models\bin\FastlineTrace.dll&quot; -C TRACE.st.config=&quot;C:\Git\ArmVirtualPlatformCNN\ArmMLVP_MNIST\Fastline\FastlineConfig\CA55-system-config.json&quot; -C TRACE.st.counters-config-file=&quot;C:\Git\ArmVirtualPlatformCNN\ArmMLVP_MNIST\Fastline\FastlineConfig\CA55-counter-config.json&quot; -C TRACE.st.output-directory=&quot;C:\Git\ArmVirtualPlatformCNN\ArmMLVP_MNIST\Fastline\FastlineReport&quot; -C TRACE.st.apc-capture=ArmMLVP_CA55x1_MNIST_O3_Conv2 --cpi-file=&quot;C:\Git\ArmVirtualPlatformCNN\ArmMLVP_MNIST\cpi_file.txt&quot;"/>
+<stringAttribute key="model_params" value="-C cluster0.NUM_CORES=0x1 -C bp.secure_memory=false -C cache_state_modelled=1 "/>
 <booleanAttribute key="runAfterConnect" value="false"/>
 <stringAttribute key="runScriptAfterConnect" value="${workspace_loc:/ArmMLVP_MNIST/mnist/image_import.py}"/>
 <stringAttribute key="runTargetInitializationScript" value="${workspace_loc:/ArmMLVP_MNIST/use_model_semihosting.ds}"/>
@@ -250,7 +254,7 @@
 </mapAttribute>
 <listAttribute key="setup">
 <listEntry value="DS5://sw/debugger/configdb/Scripts/rtsm_launcher.py"/>
-<listEntry value="&quot;FVP_Base_Cortex-A55x1&quot;"/>
+<listEntry value="DS5://bin/FVP_Base_AEMv8A"/>
 </listAttribute>
 <stringAttribute key="stopAtExpression" value="*$ENTRYPOINT"/>
 <stringAttribute key="watchpoints" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;watchpoints&gt;&#10;&lt;/watchpoints&gt;&#10;"/>

@@ -5,58 +5,58 @@
 <stringAttribute key="ANDROID_APP_DIR" value=""/>
 <stringAttribute key="ANDROID_PROCESS_NAME" value=""/>
 <mapAttribute key="AverageDurationTracker">
-<mapEntry key="*Fetching Data Model" value="901197"/>
+<mapEntry key="*Fetching Data Model" value="2470376"/>
 <mapEntry key="*FunctionLoader" value="106264492"/>
-<mapEntry key="*list global low level symbols" value="500428"/>
+<mapEntry key="*list global low level symbols" value="982865"/>
 <mapEntry key="*loading memory from target" value="4174949"/>
 <mapEntry key="*loading values from target" value="3101648"/>
 <mapEntry key="*updating expressions" value="366335"/>
 <mapEntry key="*updating local_variables" value="902414"/>
 <mapEntry key="*updating registers" value="66275861"/>
-<mapEntry key="*updating variables" value="501672"/>
-<mapEntry key="AddEventObserver" value="4755544"/>
+<mapEntry key="*updating variables" value="556851"/>
+<mapEntry key="AddEventObserver" value="8460594"/>
 <mapEntry key="Evaluate" value="4048736"/>
 <mapEntry key="ListRegimeWarningsCommand" value="572535"/>
-<mapEntry key="Retrieving globals list" value="13019262"/>
+<mapEntry key="Retrieving globals list" value="10377467"/>
 <mapEntry key="areCachesAvailable" value="413656"/>
 <mapEntry key="backtrace" value="16511495"/>
-<mapEntry key="break" value="10316512"/>
-<mapEntry key="compute execution mode" value="146684"/>
-<mapEntry key="continue" value="13350442"/>
+<mapEntry key="break" value="6491353"/>
+<mapEntry key="compute execution mode" value="190980"/>
+<mapEntry key="continue" value="13824679"/>
 <mapEntry key="core" value="9396309"/>
 <mapEntry key="disassemble" value="27010121"/>
 <mapEntry key="evaluate address" value="3847148"/>
 <mapEntry key="get byte order" value="306047"/>
-<mapEntry key="get capabilities" value="146469"/>
+<mapEntry key="get capabilities" value="124158"/>
 <mapEntry key="get cwd" value="162047"/>
-<mapEntry key="get execution addresss" value="238201"/>
-<mapEntry key="get source lines" value="151157"/>
+<mapEntry key="get execution addresss" value="139862"/>
+<mapEntry key="get source lines" value="130364"/>
 <mapEntry key="getValidEncodings" value="481099"/>
-<mapEntry key="initialize command help" value="24680949"/>
+<mapEntry key="initialize command help" value="26356546"/>
 <mapEntry key="interrupt" value="23357685"/>
-<mapEntry key="list breakpoint options" value="96901"/>
-<mapEntry key="list breakpoints" value="276046"/>
-<mapEntry key="list instruction sets" value="1028333"/>
-<mapEntry key="list signals" value="306610"/>
+<mapEntry key="list breakpoint options" value="102387"/>
+<mapEntry key="list breakpoints" value="287833"/>
+<mapEntry key="list instruction sets" value="583249"/>
+<mapEntry key="list signals" value="327590"/>
 <mapEntry key="list translations" value="1485311"/>
-<mapEntry key="list watchpoint options" value="229970"/>
-<mapEntry key="list watchpoints" value="329888"/>
-<mapEntry key="loadfile" value="33496873"/>
+<mapEntry key="list watchpoint options" value="186238"/>
+<mapEntry key="list watchpoints" value="255541"/>
+<mapEntry key="loadfile" value="29803076"/>
 <mapEntry key="reload-symbol-file" value="64182088"/>
 <mapEntry key="remove" value="4245439"/>
-<mapEntry key="run script" value="76523125"/>
-<mapEntry key="set CWD" value="2574577"/>
-<mapEntry key="set breakpoint properties" value="8512263"/>
-<mapEntry key="set debug-from" value="835102"/>
-<mapEntry key="source image_import.py" value="4337458722"/>
-<mapEntry key="source use_model_semihosting.ds" value="8465710"/>
-<mapEntry key="start" value="20504176"/>
+<mapEntry key="run script" value="57408104"/>
+<mapEntry key="set CWD" value="1852779"/>
+<mapEntry key="set breakpoint properties" value="5787397"/>
+<mapEntry key="set debug-from" value="701382"/>
+<mapEntry key="source image_import.py" value="4161675237"/>
+<mapEntry key="source use_model_semihosting.ds" value="6366718"/>
+<mapEntry key="start" value="14703179"/>
 <mapEntry key="step" value="85277838"/>
 <mapEntry key="synchronizing trace ranges" value="20340"/>
 <mapEntry key="toggleBreakpoint" value="5372006"/>
 <mapEntry key="updateBreakpointLocation" value="1672225"/>
 <mapEntry key="updating MMU tables" value="34024302"/>
-<mapEntry key="waitForTargetToStop" value="4326141"/>
+<mapEntry key="waitForTargetToStop" value="6396453"/>
 </mapAttribute>
 <intAttribute key="DEBUG_TAB..RESOURCES.COUNT" value="0"/>
 <booleanAttribute key="EVENT_VIEWER_ENABLED" value="false"/>
@@ -80,7 +80,7 @@
 <listAttribute key="FILES.DOWNLOAD_AND_DEBUG"/>
 <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.OPTION.ALSO_LOAD_SYMBOLS" value="false"/>
 <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.OPTION.ON_DEMAND_LOAD" value="true"/>
-<stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.TYPE" value="TARGET_DOWNLOAD_DIR"/>
+<stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.TYPE" value="TARGET_WORKING_DIR"/>
 <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.VALUE" value=""/>
 <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.OPTION.ALSO_LOAD_SYMBOLS" value="false"/>
 <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.OPTION.ON_DEMAND_LOAD" value="true"/>
@@ -88,13 +88,13 @@
 <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.VALUE" value=""/>
 <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.OPTION.ALSO_LOAD_SYMBOLS" value="false"/>
 <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.OPTION.ON_DEMAND_LOAD" value="true"/>
-<stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.TYPE" value="TARGET_WORKING_DIR"/>
+<stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.TYPE" value="TARGET_DOWNLOAD_DIR"/>
 <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.VALUE" value=""/>
 <intAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.COUNT" value="3"/>
 <listAttribute key="FILES.DOWNLOAD_DEBUG"/>
 <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.OPTION.ALSO_LOAD_SYMBOLS" value="false"/>
 <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.OPTION.ON_DEMAND_LOAD" value="true"/>
-<stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.TYPE" value="TARGET_DOWNLOAD_DIR"/>
+<stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.TYPE" value="TARGET_WORKING_DIR"/>
 <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.VALUE" value=""/>
 <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.OPTION.ALSO_LOAD_SYMBOLS" value="false"/>
 <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.OPTION.ON_DEMAND_LOAD" value="true"/>
@@ -102,7 +102,7 @@
 <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.VALUE" value=""/>
 <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.OPTION.ALSO_LOAD_SYMBOLS" value="false"/>
 <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.OPTION.ON_DEMAND_LOAD" value="true"/>
-<stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.TYPE" value="TARGET_WORKING_DIR"/>
+<stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.TYPE" value="TARGET_DOWNLOAD_DIR"/>
 <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.VALUE" value=""/>
 <intAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.COUNT" value="3"/>
 <intAttribute key="FILES.DOWNLOAD_DEBUG_ANDROID.RESOURCES.COUNT" value="0"/>
@@ -152,8 +152,8 @@
 <stringAttribute key="breakpoints" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;breakpoints&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;RAW_EXEC_ADDRESS&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; address=&quot;EL1N:0x0000000000004A00&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; address=&quot;EL1N:0x0000000000004A00&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&lt;/breakpoints&gt;&#10;"/>
 <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.DisassemblyView.addresses">
 <listEntry value=""/>
-<listEntry value="&lt;Next Instruction&gt;"/>
 <listEntry value="$pc"/>
+<listEntry value="&lt;Next Instruction&gt;"/>
 <listEntry value="convolution"/>
 <listEntry value="0X0000000000004ad0"/>
 <listEntry value="0x4a00"/>
@@ -229,7 +229,7 @@
 <stringAttribute key="dtsl_options_file" value="default"/>
 <stringAttribute key="dtsl_tracecapture_option" value="options.traceBuffer.traceCaptureDevice"/>
 <booleanAttribute key="linuxOS" value="false"/>
-<stringAttribute key="model_params" value="-C bp.secure_memory=false"/>
+<stringAttribute key="model_params" value="-C bp.secure_memory=false -C cluster0.NUM_CORES=0x1 -C cache_state_modelled=1 "/>
 <booleanAttribute key="runAfterConnect" value="false"/>
 <stringAttribute key="runScriptAfterConnect" value="${workspace_loc:/ArmMLVP_MNIST/mnist/image_import.py}"/>
 <stringAttribute key="runTargetInitializationScript" value="${workspace_loc:/ArmMLVP_MNIST/use_model_semihosting.ds}"/>
