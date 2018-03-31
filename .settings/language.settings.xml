@@ -4,7 +4,7 @@
 		<extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
 			<provider copy-of="extension" id="org.eclipse.cdt.ui.UserLanguageSettingsProvider"/>
 			<provider-reference id="org.eclipse.cdt.core.ReferencedProjectsLanguageSettingsProvider" ref="shared-provider"/>
-			<provider class="com.arm.eclipse.builder.armcc.discovery.ArmCompiler6LanguageSettingsProvider" console="false" env-hash="-391590167439245381" id="com.arm.eclipse.builder.armcc.v6.langprovider" keep-relative-paths="false" name="ARM Compiler 6 Built-in Compiler Settings" parameter="${COMMAND} ${FLAGS} -E -P -v -dD &quot;${INPUTS}&quot;" prefer-non-shared="true">
+			<provider class="com.arm.eclipse.builder.armcc.discovery.ArmCompiler6LanguageSettingsProvider" console="false" env-hash="207113675125385780" id="com.arm.eclipse.builder.armcc.v6.langprovider" keep-relative-paths="false" name="ARM Compiler 6 Built-in Compiler Settings" parameter="${COMMAND} ${FLAGS} -E -P -v -dD &quot;${INPUTS}&quot;" prefer-non-shared="true">
 				<language-scope id="org.eclipse.cdt.core.gcc"/>
 				<language-scope id="org.eclipse.cdt.core.g++"/>
 			</provider>
@@ -15,7 +15,7 @@
 		<extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
 			<provider copy-of="extension" id="org.eclipse.cdt.ui.UserLanguageSettingsProvider"/>
 			<provider-reference id="org.eclipse.cdt.core.ReferencedProjectsLanguageSettingsProvider" ref="shared-provider"/>
-			<provider class="com.arm.eclipse.builder.armcc.discovery.ArmCompiler6LanguageSettingsProvider" console="false" env-hash="-391590167439245381" id="com.arm.eclipse.builder.armcc.v6.langprovider" keep-relative-paths="false" name="ARM Compiler 6 Built-in Compiler Settings" parameter="${COMMAND} ${FLAGS} -E -P -v -dD &quot;${INPUTS}&quot;" prefer-non-shared="true">
+			<provider class="com.arm.eclipse.builder.armcc.discovery.ArmCompiler6LanguageSettingsProvider" console="false" env-hash="207113675125385780" id="com.arm.eclipse.builder.armcc.v6.langprovider" keep-relative-paths="false" name="ARM Compiler 6 Built-in Compiler Settings" parameter="${COMMAND} ${FLAGS} -E -P -v -dD &quot;${INPUTS}&quot;" prefer-non-shared="true">
 				<language-scope id="org.eclipse.cdt.core.gcc"/>
 				<language-scope id="org.eclipse.cdt.core.g++"/>
 			</provider>
